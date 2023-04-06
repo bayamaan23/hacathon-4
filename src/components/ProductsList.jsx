@@ -28,7 +28,13 @@ function ProductsList() {
     getProducts();
   }, [searchParams]);
 
+  const [firstMount, setFirstMount] = useState(true);
+
   useEffect(() => {
+    if (firstMount) {
+      setFirstMount(false);
+      return;
+    }
     if (category === "all") {
       setSearchParams({
         title_like: inputVal,
@@ -62,6 +68,12 @@ function ProductsList() {
       });
     }
   }, [page]);
+
+  useEffect(() => {
+    if (pageTotalCount < page) {
+      setPage(pageTotalCount);
+    }
+  }, [pageTotalCount]);
   return (
     <div>
       <TextField

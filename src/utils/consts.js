@@ -5,5 +5,8 @@ export const ACTIONS = {
   pageTotalCount: "pageTotalCount",
   cart: "cart",
   cartLength: "cartLength",
+  user: "user",
 };
 export const LIMIT = 6;
+
+export const ADMINS = ["baya_man23@mail.ru"];

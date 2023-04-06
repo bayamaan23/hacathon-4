@@ -29,10 +29,10 @@ function ProductContext({ children }) {
 
   async function getProducts() {
     try {
-      console.log(window.location.search);
-      const res = await axios.get(`${API}/${window.location.search}`);
+      const res = await axios.get(
+        `${API}/${window.location.search || `?_limit=${LIMIT}`}`
+      );
       const totalPages = Math.ceil(res.headers["x-total-count"] / LIMIT);
-      console.log(res.data, "products");
       dispatch({
         type: ACTIONS.pageTotalCount,
         payload: totalPages,
@@ -41,12 +41,10 @@ function ProductContext({ children }) {
         type: ACTIONS.products,
         payload: res.data,
       });
-      console.log(res.data.length);
     } catch (error) {
       console.log(error);
     }
   }
-  console.log(state.products, 'state prod');
 
   async function getOneProduct(id) {
     try {
