@@ -16,6 +16,8 @@ import RemoveShoppingCartOutlinedIcon from "@mui/icons-material/RemoveShoppingCa
 import { useCartContext } from "../contexts/CartContext";
 import { useAuthContext } from "../contexts/AuthContext";
 
+//saknar
+
 function ProductCard({ item }) {
   const { deleteProduct } = useProductContext();
   const { addProductToCart, deleteProductCart, isAllReadyInCart } =
