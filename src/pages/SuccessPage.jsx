@@ -10,7 +10,7 @@ function SuccessPage() {
     clearCart();
     runConfetti();
     setTimeout(() => {
-    //   navigate("/");
+      navigate("/");
     }, 5000);
   }, []);
   return (
