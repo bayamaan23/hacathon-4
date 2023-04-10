@@ -23,6 +23,10 @@ let pages = [
     title: "Home",
     link: "/",
   },
+  {
+    title: "compiler",
+    link: "/compiler",
+  },
 ];
 
 const adminPages = [
