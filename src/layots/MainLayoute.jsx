@@ -7,7 +7,7 @@ function MainLayoute() {
   return (
     <div>
       <Navbar />
-      <Container maxWidth="lg" sx={{marginTop:'50px'}}>
+      <Container maxWidth="lg" sx={{ marginTop: "50px" }}>
         <Outlet />
       </Container>
     </div>

@@ -7,6 +7,7 @@ import ProductContext from "./contexts/ProductContext";
 import CartContext from "./contexts/CartContext";
 import ToastiFy from "./components/ToastiFy";
 import AuthContext from "./contexts/AuthContext";
+import CompilerContext from "./contexts/CompilerContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,8 +15,10 @@ root.render(
     <ProductContext>
       <CartContext>
         <AuthContext>
-        <ToastiFy/>
-        <App />
+          <CompilerContext>
+            <ToastiFy />
+            <App />
+          </CompilerContext>
         </AuthContext>
       </CartContext>
     </ProductContext>
