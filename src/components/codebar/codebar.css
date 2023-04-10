@@ -1,0 +1,50 @@
+.codebar {
+  width: 600px;
+  background: #1e1e1e;
+  position: relative;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  padding: 0 15px;
+  gap: 15px;
+  border-bottom: 2px solid #333;
+}
+
+.item {
+  display: flex;
+  height: 50px;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+}
+
+.activeTab {
+  background: rgb(31, 98, 74);
+  color: white;
+  transition: 0.2s;
+}
+
+.editor {
+  height: calc(100%, -70px);
+  padding: 10px;
+}
+
+.mainEditor {
+  display: flex;
+}
+
+.preview {
+  width: 600px;
+}

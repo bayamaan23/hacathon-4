@@ -27,12 +27,19 @@ let pages = [
 
 const adminPages = [
   {
+    title: "compiler",
+    link: "/compiler",
+  },
+];
+
+const adminPages = [
+  {
     title: "Add Product",
     link: "/add",
   },
 ];
 const settings = ["Profile", "Account", "Dashboard"];
-// qwer
+
 function Navbar() {
   const { cartLength, getCart } = useCartContext();
   const { user, logout, isAdmin } = useAuthContext();

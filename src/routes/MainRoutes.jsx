@@ -8,6 +8,9 @@ import HomePage from "../pages/HomePage";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
 import SuccessPage from "../pages/SuccessPage";
 import AuthPage from "../pages/AuthPage";
+import CodeBar from "../components/codebar/CodeBar";
+import Preview from "../components/Preview/Preview";
+
 
 function MainRoutes() {
   return (
@@ -18,6 +21,7 @@ function MainRoutes() {
         <Route path="/edit/:id" element={<EditProductPage />} />
         <Route path="/details/:id" element={<ProductDetailsPage />} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/compiler" element={<CodeBar />} />
       </Route>
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/success" element={<SuccessPage />} />

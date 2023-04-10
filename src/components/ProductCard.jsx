@@ -19,6 +19,9 @@ import { useAuthContext } from "../contexts/AuthContext";
 import video from "../video/video-1.mp4";
 import { videos } from "../video";
 
+
+
+
 function ProductCard({ item, index }) {
   const { deleteProduct } = useProductContext();
   const { addProductToCart, deleteProductCart, isAllReadyInCart } =
@@ -55,6 +58,7 @@ function ProductCard({ item, index }) {
           >
             ${item.price}
           </Typography>
+        <CardActions>
           {isAdmin() ? (
             <>
               <Button
@@ -82,6 +86,7 @@ function ProductCard({ item, index }) {
             color="inherit"
           >
             learn more
+
           </Button>
           {isAllReadyInCart(item.id) ? (
             <IconButton onClick={() => deleteProductCart(item.id)}>
