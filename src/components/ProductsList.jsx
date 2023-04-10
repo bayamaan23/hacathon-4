@@ -76,36 +76,43 @@ function ProductsList() {
   }, [pageTotalCount]);
   return (
     <div>
-      <TextField
-        value={inputVal}
-        onChange={(e) => setInputVal(e.target.value)}
-        style={{ margin: "20px 0", width: "800px" }}
-        variant="outlined"
-        label="Search..."
-      />
-      <FormControl fullWidth>
-        <InputLabel style={{ margin: "20px 0" }} id="demo-simple-select-label">
-          Category
-        </InputLabel>
-        <Select
-          style={{ margin: "20px 0" }}
-          labelId="demo-simple-select-label"
-          id="demo-simple-select"
-          value={category}
-          label="Category"
-          onChange={(e) => setCategory(e.target.value)}
-        >
-          <MenuItem value={"all"}>All</MenuItem>
-          <MenuItem value={"men's clothing"}>Men's</MenuItem>
-          <MenuItem value={"women's clothing"}>Women's</MenuItem>
-          <MenuItem value={"pants"}>Pants</MenuItem>
-          <MenuItem value={"little Kids"}>Little Kids</MenuItem>
-          <MenuItem value={"man's shoes"}>Man's shoes</MenuItem>
-        </Select>
-      </FormControl>
+      <Box style={{ display: "flex", justifyContent: "space-between" }}>
+        <TextField
+          value={inputVal}
+          onChange={(e) => setInputVal(e.target.value)}
+          style={{ margin: "20px 0", width: "90%" }}
+          variant="outlined"
+          label="Search..."
+        />
+        <FormControl fullWidth>
+          <InputLabel
+            style={{
+              margin: "20px 0",
+            }}
+            id="demo-simple-select-label"
+          >
+            Category
+          </InputLabel>
+          <Select
+            style={{ margin: "20px 0", width: "100px" }}
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={category}
+            label="Category"
+            onChange={(e) => setCategory(e.target.value)}
+          >
+            <MenuItem value={"all"}>All</MenuItem>
+            <MenuItem value={"men's clothing"}>Men's</MenuItem>
+            <MenuItem value={"women's clothing"}>Women's</MenuItem>
+            <MenuItem value={"pants"}>Pants</MenuItem>
+            <MenuItem value={"little Kids"}>Little Kids</MenuItem>
+            <MenuItem value={"man's shoes"}>Man's shoes</MenuItem>
+          </Select>
+        </FormControl>
+      </Box>
       <Grid container spacing={3}>
-        {products.map((item) => {
-          return <ProductCard key={item.id} item={item} />;
+        {products.map((item, i) => {
+          return <ProductCard key={item.id} item={item} index={i} />;
         })}
       </Grid>
       <Box sx={{ maxWidth: "max-content", margin: "20px auto" }}>

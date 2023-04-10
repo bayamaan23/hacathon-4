@@ -11,6 +11,7 @@ import AuthPage from "../pages/AuthPage";
 import CodeBar from "../components/codebar/CodeBar";
 import Preview from "../components/Preview/Preview";
 
+
 function MainRoutes() {
   return (
     <Routes>
