@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardActions,
@@ -15,8 +16,10 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import RemoveShoppingCartOutlinedIcon from "@mui/icons-material/RemoveShoppingCartOutlined";
 import { useCartContext } from "../contexts/CartContext";
 import { useAuthContext } from "../contexts/AuthContext";
+import video from "../video/video-1.mp4";
+import { videos } from "../video";
 
-function ProductCard({ item }) {
+function ProductCard({ item, index }) {
   const { deleteProduct } = useProductContext();
   const { addProductToCart, deleteProductCart, isAllReadyInCart } =
     useCartContext();
@@ -25,20 +28,33 @@ function ProductCard({ item }) {
     <Grid item md={4} sm={6} xs={12}>
       <Card>
         <CardMedia
+        style={{margin:'-50px 0'}}
+          sx={{ objectFit: "contain" }}
           component="img"
           alt="green iguana"
           height="320"
           image={item.image}
+          // src="https://www.youtube.com/watch?v=2Ep6VmdKjGE"
+          // controls
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            style={{ textAlign: "left" }}
+            gutterBottom
+            variant="h5"
+            component="div"
+          >
             {item.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+        </CardContent>
+        <CardActions style={{padding:'18px'}}>
+          <Typography
+            style={{ textAlign: "left" }}
+            variant="body2"
+            color="text.secondary"
+          >
             ${item.price}
           </Typography>
-        </CardContent>
-        <CardActions>
           {isAdmin() ? (
             <>
               <Button
@@ -58,8 +74,14 @@ function ProductCard({ item }) {
               </Button>
             </>
           ) : null}
-          <Button component={Link} to={`/details/${item.id}`} size="small">
-            Buy
+          <Button
+            style={{ marginLeft:'auto'}}
+            component={Link}
+            to={`/details/${item.id}-${index}`}
+            size="small"
+            color="inherit"
+          >
+            learn more
           </Button>
           {isAllReadyInCart(item.id) ? (
             <IconButton onClick={() => deleteProductCart(item.id)}>
