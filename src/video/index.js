@@ -23,7 +23,6 @@ import Video22 from "./video-22.mp4";
 import Video23 from "./video-23.mp4";
 import Video24 from "./video-24.mp4";
 
-
 export const videos = [
   Video1,
   Video2,

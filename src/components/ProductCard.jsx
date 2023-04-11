@@ -31,7 +31,7 @@ function ProductCard({ item, index }) {
     <Grid item md={4} sm={6} xs={12}>
       <Card>
         <CardMedia
-        style={{margin:'-50px 0'}}
+          style={{ margin: "-50px 0" }}
           sx={{ objectFit: "contain" }}
           component="img"
           alt="green iguana"
@@ -50,7 +50,7 @@ function ProductCard({ item, index }) {
             {item.title}
           </Typography>
         </CardContent>
-        <CardActions style={{padding:'18px'}}>
+        <CardActions style={{ padding: "18px" }}>
           <Typography
             style={{ textAlign: "left" }}
             variant="body2"
@@ -58,6 +58,7 @@ function ProductCard({ item, index }) {
           >
             ${item.price}
           </Typography>
+        </CardActions>
         <CardActions>
           {isAdmin() ? (
             <>
@@ -79,14 +80,13 @@ function ProductCard({ item, index }) {
             </>
           ) : null}
           <Button
-            style={{ marginLeft:'auto'}}
+            style={{ marginLeft: "auto" }}
             component={Link}
             to={`/details/${item.id}-${index}`}
             size="small"
             color="inherit"
           >
             learn more
-
           </Button>
           {isAllReadyInCart(item.id) ? (
             <IconButton onClick={() => deleteProductCart(item.id)}>
