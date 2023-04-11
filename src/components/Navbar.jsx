@@ -23,14 +23,12 @@ let pages = [
     title: "Home",
     link: "/",
   },
-];
-
-const adminPages = [
   {
     title: "compiler",
     link: "/compiler",
   },
 ];
+
 
 const adminPages = [
   {
@@ -69,12 +67,6 @@ function Navbar() {
     <AppBar sx={{ background: "black" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon
-            sx={{
-              display: { xs: "none", md: "flex" },
-              mr: 1,
-            }}
-          />
           <Typography
             variant="h6"
             noWrap
@@ -90,7 +82,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            N.iCE
+            &#128123;N.iCE
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

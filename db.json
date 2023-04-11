@@ -4,7 +4,7 @@
       "title": "Строки в JAVASCRIPT. Тип данных string. Тип JAVASCRIPT.",
       "description": "В этом уроке поработаем со строками в JavaScript. Разберем типы кавычек, научимся искать часть строки. А также разделять строки и менять регистр.",
       "price": "140",
-      "category": "man's shoes",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/jc5Upe8xIN0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDAW6x2kMzDvAIHq4Jg2W2faMN8zA",
       "id": 1
     },
@@ -12,7 +12,7 @@
       "title": "Числа в JAVASCRIPT. Тип данных number. Работа с числами.",
       "description": "Created for the hardwood but taken to the streets, the '80s b-ball icon returns with classic, stone-washed canvas in a durable design. Channeling vintage style back onto the streets, its padded, mid-cut collar lets you take your game anywhere—in comfort.",
       "price": "115",
-      "category": "man's shoes",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/tiHvPGOX5yc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBJ-RX6R67TWiVCuH_mjzfrSjk7LA",
       "id": 2
     },
@@ -20,7 +20,7 @@
       "title": "Функции в JAVASCRIPT. Стрелочные функции, рекурсия",
       "description": "One word: tradition. From heritage running to fashion phenom to movie star, the Cortez's retro appeal, sponge-soft midsole and seesaw detailing deliver decade after decade. This fresh take on the ubiquitous look goes big on vintage vibes with suede accents and throwback branding. The classic varsity color combo keeps your style sporty, while the gum rubber outsole puts the cherry on the bottom.",
       "price": "100",
-      "category": "man's shoes",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/6cKoB5ijaGA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWYfy45Crz-ce50dQQrghibg8Bog",
       "id": 3
     },
@@ -29,7 +29,7 @@
       "title": "JQUERY ПРОТИВ JAVASCRIPT. Стоит ли учить jQuery в 2021?",
       "price": "70",
       "description": "Run, spin, lift, stretch—no matter where your workout takes you, we have you covered in the sweat-wicking Primary Top. We designed it to be soft and comfortable, with underarm ventilation to help keep you cool during your reps.",
-      "category": "men's clothing",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/mX_jE18Zuyg/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBpjukkAmlw9aY_sUZ3kjTt-Odz7w",
       "rating": {
         "rate": 3.9,
@@ -41,7 +41,7 @@
       "title": "Что такое JAVASCRIPT? Как работает JS? Пишем первую программу на JavaScript.",
       "price": "100",
       "description": "Celebrate the power and simplicity of the Swoosh. This warm, brushed fleece hoodie is made with some extra room through the shoulders, chest and body for easy comfort and laid-back, nostalgic style. Thick, stretchy ribbing at the cuffs and hem help hold the hoodie in place when you move and seal in your warmth when conditions cool. Our Solo Swoosh is embroidered on the left chest to keep your look clean and effortless.",
-      "category": "men's clothing",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/wdViO9OcQzs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAAqAYnuJcTgkFowlkCUu9ftispWg",
       "rating": {
         "rate": 4.1,
@@ -52,7 +52,7 @@
       "title": "Основы синтаксиса JAVASCRIPT. Структура кода. Инструкции.",
       "description": "You ever daydream about Georgia in the spring? We do. With its peach-fuzz tones complementing a clean base, this version is perfect for a long stroll through a warm, inviting Southern breeze. Two large Zoom Air units, more room for your feet and enhanced traction help you through your round, while radiant brights and extra-juicy goodness throughout remind you to keep it fresh, always.",
       "price": 180,
-      "category": "man's shoes",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/uOeFpp872MY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC_LvK-Z2SVlHMSnvWIBh74q0iyTA",
       "id": 6
     },
@@ -61,7 +61,7 @@
       "title": "Переменные в JAVASCRIPT. Константы. Ключевые слова LET CONST VAR.",
       "price": 110,
       "description": "Meet your new go-to hoodie. Heavyweight fleece feels super soft, and the comfy, relaxed fit will have you reaching for it again and again. An oversized Jumpman label is sewn on front-and-center, making this wardrobe staple anything but basic.",
-      "category": "men's clothing",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/5V8IeATHr4w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCRcU-ToqTfOcw9p8yMeUNGzAetTw",
       "rating": {
         "rate": 4.7,
@@ -73,7 +73,7 @@
       "title": "Типы данных JAVASCRIPT. Null String Undefined Boolean Number и другие.",
       "price": 140,
       "description": "Train strong and stay cool in this warm-up jacket. Its breathable woven material is complimented by underarm eyelets that let in more air. Still not enough? Unzip and hang loose. A Jordan woven patch and luxe metal zipper keep your look perfectly fly.",
-      "category": "men's clothing",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/g7jDucodUzQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCDSXZMFDimbWo2Es8veJKTVjgG3g",
       "rating": {
         "rate": 2.1,
@@ -85,7 +85,7 @@
       "title": "IF ELSE в JAVASCRIPT. Условный оператор '?'. Примеры IF ELSE.",
       "price": 55,
       "description": "A closet staple, the Nike Sportswear Club Fleece Joggers combine a classic look with the soft comfort of fleece for an elevated, everyday look that you can wear every day.",
-      "category": "pants",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/tFyRhDZgHaU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAMoyCAPO6vTHb1yOf0cICx71hgcA",
       "rating": {
         "rate": 3.9,
@@ -97,7 +97,7 @@
       "title": "Циклы FOR и WHILE в JavaScript. Директивы break и continue.",
       "price": 95,
       "description": "Since 1978, the Windrunner jacket has been celebrated for its bold simplicity. Now, you can pair this iconic jacket with matching pants for a complete, uniform look. They're made with crisp woven fabric for a smooth feel, and lined with mesh for air-cooled comfort.",
-      "category": "pants",
+      "category": "java script",
       "image": "https://i.ytimg.com/vi/QjDzp-yM_To/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDwpGlTUbkVlEXYY6hN8rhLRwqn1w",
       "rating": {
         "rate": 3,
@@ -106,11 +106,11 @@
     },
     {
       "id": 11,
-      "title": "CSS animation и @keyframes за 12 минут. Подробный разбор CSS свойств анимации + шпаргалка.",
+      "title": "CSS animation и @keyframes за 12 минут. Подробный разбор CSS анимации",
       "price": 50,
       "description": "Sit back and relax—or not. These comfy, versatile pants have a plush, heavyweight feel and an intentionally washed-out look. A zippered pocket lets you securely stash essentials if you decide to head out.",
-      "category": "pants",
-      "image": "https://www.youtube.com/watch?v=GKgOOuTL0po",
+      "category": "CSS",
+      "image": "https://i.ytimg.com/vi/GKgOOuTL0po/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGUGglKDrQ3fh1nkUJThvNTugFJw",
       "rating": {
         "rate": 1.9,
         "count": 100
@@ -121,8 +121,8 @@
       "title": "Все о CSS переходах (transitions) за 16 минут. CSS анимация.",
       "price": 70,
       "description": "This jacket is a lightweight grab-and-go layer made of woven nylon fabric designed in an easy pullover style making it great for spring or summer weather. The quarter-zip closure makes dressing and temperature regulation easy, encased elastic at the cuffs and hem help retain warmth and side seam pockets help secure small items. Additionally, the jacket is fully lined with knit mesh fabric enhanced with quick-drying, moisture-wicking Dri-FIT technology to help kids stay cool and dry while they play.",
-      "category": "little Kids",
-      "image": "https://www.youtube.com/watch?v=yZFg3cuq_LU",
+      "category": "CSS",
+      "image": "https://i.ytimg.com/vi/yZFg3cuq_LU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDsMGOOWwOlC7Uv9ewbM7F7Ai4TNw",
       "rating": {
         "rate": 3.3,
         "count": 203
@@ -130,11 +130,11 @@
     },
     {
       "id": 13,
-      "title": "Геометрические фигуры на HTML и CSS ",
+      "title": "Геометрические фигуры на HTML и CSS Треугольник стрелка круг трапеция и др.",
       "price": 40,
       "description": "This hoodie is made of snuggly plush sherpa fabric for the ultimate in lightweight warmth. The roomy cut is full of cozy feels, and the full-zip closure makes layering and temperature regulation easy.",
-      "category": "little Kids",
-      "image": "https://www.youtube.com/watch?v=Irj55RYH254",
+      "category": "CSS HTML",
+      "image": "https://i.ytimg.com/vi/Irj55RYH254/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDNDc4dyi78XWeFyk_b7sm0ujlCmw",
       "rating": {
         "rate": 2.9,
         "count": 470
@@ -142,11 +142,11 @@
     },
     {
       "id": 14,
-      "title": "Как сделать красивую кнопку с анимацией CSS HTML",
+      "title": "Как сделать красивую кнопку с анимацией CSS HTML. CSS3 эффекты туториал",
       "price": 60,
       "description": "This lightweight hoodie is made of soft fleece fabric for all the cozy feels, and the roomy cut makes layering easy. Pair with the Nike Sportswear Club Marble Fleece Pants for a coordinated look.",
-      "category": "little Kids",
-      "image": "https://www.youtube.com/watch?v=w00Z5y8jEjk",
+      "category": "CSS HTML",
+      "image": "https://i.ytimg.com/vi/w00Z5y8jEjk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBqkL58Kt3TJ5XhSh5AadjTkRxpaw",
       "rating": {
         "rate": 4.8,
         "count": 400
@@ -157,8 +157,8 @@
       "title": "Адаптивное (отзывчивое) CSS свойство. Как быстро адаптировать элементы.",
       "price": 30,
       "description": "This traditional hoodie has been given a modern twist. It is made of soft sueded fleece in an oversized, cozy cut that makes layering easy. The cropped cut still provides full coverage for a flattering look.",
-      "category": "little Kids",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3ad723f0-099f-43f1-9502-08b3a80181da/icon-clash-pullover-hoodie-little-kids-hoodie-F4c995.png",
+      "category": "CSS",
+      "image": "https://i.ytimg.com/vi/eaOAY0vIB4U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAcl9C-ZsN8jjH__2FwA0mTLn4tVw",
       "rating": {
         "rate": 2.9,
         "count": 250
@@ -166,11 +166,11 @@
     },
     {
       "id": 16,
-      "title": "Адаптивный шрифт. Пример реализации отзывчивого шрифта на CSS + SCSS миксин",
+      "title": "Адаптивный шрифт. Пример реализации отзывчивого шрифта на CSS + SCSS",
       "price": 70,
       "description": "Rise up and transform your fleece wardrobe with the strong cozy vibes of Phoenix Fleece. With an extreme drop in the shoulders and extra room in the body, this voluminous hoodie will never hold you back or hem you in. Exaggerated details like an oversized front pocket and extra-tall ribbing on the cuffs and hem ensure your look is anything but basic.",
-      "category": "women's clothing",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/c5045521-8929-41cd-a801-bf2b2c09c2f8/sportswear-phoenix-fleece-womens-over-oversized-pullover-hoodie-Kqx9H3.png",
+      "category": "CSS",
+      "image": "https://i.ytimg.com/vi/HJZP5QsrpXs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAhvAGqcKTgZEDaSFVHKYE_-IXS8A",
       "rating": {
         "rate": 2.6,
         "count": 235
@@ -181,8 +181,8 @@
       "title": "HTML уроки. HTML теги. Тег DIV и другие. Уроки HTML CSS JS. часть 1",
       "price": 70,
       "description": "Rise up and transform your fleece wardrobe with strong cozy vibes. With a voluminous fit and exaggerated ribbing, this Phoenix Fleece sweatshirt gives you a look that's anything but basic.",
-      "category": "women's clothing",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/0af4ccf3-761d-4250-89d7-fbfec7d51d9a/sportswear-phoenix-fleece-womens-over-oversized-crewneck-sweatshirt-Wj2Rd6.png",
+      "category": "HTML",
+      "image": "https://i.ytimg.com/vi/z3GS5oYGq5U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAeABs_msOdsqJZze0AJTJASXr9kQ",
       "rating": {
         "rate": 2.9,
         "count": 340
@@ -193,8 +193,8 @@
       "title": "HTML уроки. Первый урок по HTML верстке. Уроки HTML CSS JS. часть 2",
       "price": 50,
       "description": "Phoenix Fleece breathes new life into your favorites, ensuring your look is anything but basic. The voluminous fit and exaggerated ribbing of this oversized layer bring strong cozy vibes to help you stay toasty all day long.",
-      "category": "women's clothing",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/2a001310-6436-470b-96f8-644681c6b92d/sportswear-phoenix-fleece-city-edition-womens-over-oversized-crewneck-sweatshirt-rgt1dS.png",
+      "category": "HTML",
+      "image": "https://i.ytimg.com/vi/V1_2mV48lOk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkc7f1CtM_G8f7SfTIekt__7HZag",
       "rating": {
         "rate": 3.8,
         "count": 679
@@ -205,8 +205,8 @@
       "title": "Свойства и стили оформления блоков. CSS opacity. Уроки HTML CSS JS.",
       "price": 90,
       "description": "Wrap yourself in relaxation as you rest in this roomy, heat-regulating top. With soft wool fabric that sits gently against your skin and a wide, ribbed neckline, you'll feel cozy as you focus on your recovery between practices.",
-      "category": "women's clothing",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/1f90e956-e3e4-4d67-bb1d-abb3e3b43d12/yoga-therma-fit-adv-womens-top-H4Zx2M.png",
+      "category": "CSS",
+      "image": "https://i.ytimg.com/vi/G4aOu26s4_s/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAxCoT8kIEEg_y0e2YkYkI1SGkeZA",
       "rating": {
         "rate": 4.7,
         "count": 130
@@ -214,11 +214,11 @@
     },
     {
       "id": 20,
-      "title": "ВЫГОРАНИЕ ПРОГРАММИСТА. Выгорание в IT-сфере: стадии причины лечение",
+      "title": "ВЫГОРАНИЕ ПРОГРАММИСТА. Выгорание в IT: стадии причины лечение",
       "price": 90,
       "description": "With an extra roomy, cropped fit, this full-zip hoodie is made to pair with your favorite leggings. Its semi-brushed fleece fabric features inset mesh panels at the shoulders for an athletic look.",
-      "category": "women's clothing",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/656cb0cc-722c-453c-8468-8338c45d7ca4/air-womens-oversized-full-zip-fleece-hoodie-Psl0xP.png",
+      "category": "motivation",
+      "image": "https://i.ytimg.com/vi/9EZ9D7Fns9g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC6606wtbRuo5vK-_PE4NaFrxrSqw",
       "rating": {
         "rate": 4.5,
         "count": 146
@@ -226,37 +226,37 @@
     },
     {
       "id": 21,
-      "title": "Как НЕ БРОСИТЬ УЧЕБУ на программиста. Советы и мотивация. Шесть причин бросить программирование",
+      "title": "Как НЕ БРОСИТЬ УЧЕБУ на программиста. Советы и мотивация. ",
       "price": 70,
       "description": "Rise up and transform your fleece wardrobe with strong cozy vibes. All about warmth and comfort, the longer cut of this full-zip hoodie lets you bring the snuggly feeling of your favorite throw blanket with you everywhere you go.",
-      "category": "women's clothing",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/6a01f75e-3f7e-44a6-a134-70fa054125e9/sportswear-phoenix-fleece-womens-oversized-long-full-zip-hoodie-6zPtFb.png",
+      "category": "motivation",
+      "image": "https://i.ytimg.com/vi/jgLiQfXZtmo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnou_uhdTIusUfqcNtFJrrI5EL9g",
       "rating": {
         "rate": 3.6,
         "count": 145
       }
     },
     {
-      "title": "Сколько зарабатывают программисты и другие IT-специалисты? Рассказываю о своем доходе на фрилансе!",
+      "title": "Сколько зарабатывают программисты и другие IT-специалисты? ",
       "description": "Cover up in cozy with this Paris Saint-Germain hoodie. It's made with brushed-back fleece in an exaggerated fit for an ultrasoft feel. Team graphics front and back show your PSG pride whether you're coming or going.",
       "price": 80,
-      "category": "women's clothing",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/3e60ebce-f95c-4570-86f1-b7acd8705408/paris-saint-germain-womens-fleece-hoodie-J3wN6V.png",
+      "category": "motivation",
+      "image": "https://i.ytimg.com/vi/NhpQiiVYEv4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxwI_Mxg6XP1HpRaOCqxwa9NCm2A",
       "id": 22
     },
     {
-      "title": "БЫСТРАЯ ВЕРСТКА САЙТА. Как увеличить скорость в веб-разработке? Почему высокая скорость так важна?",
-      "description": "jkh",
-      "price": "j",
-      "category": "women's clothing",
-      "image": "kjh",
+      "title": "БЫСТРАЯ ВЕРСТКА САЙТА. Как увеличить скорость? Cкорость так важна?",
+      "description": "Cover up in cozy with this Paris Saint-Germain hoodie. It's made with brushed-back fleece in an exaggerated fit for an ultrasoft feel. Team graphics front and back show your PSG pride whether you're coming or going.",
+      "price": "90",
+      "category": "motivation",
+      "image": "https://i.ytimg.com/vi/6S5Zw2WuyFE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8DTFFA6tBpkJNvKYTXc2qfAfiww",
       "id": 23
     },
     {
       "title": "wertyui",
       "description": "sdfrgthyuji",
       "price": "345",
-      "category": "women's clothing",
+      "category": "motivation",
       "image": "https://avatars.mds.yandex.net/i?id=aa929ebd4f05425fd7f71eabe0592732-4156995-images-thumbs&n=13",
       "id": 25
 
