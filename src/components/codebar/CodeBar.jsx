@@ -26,65 +26,67 @@ function CodeBar() {
     console.log(activeTab);
   }, [activeTab]);
   return (
-    <Box sx={{ display: "flex" }}>
-      <div className="codebar">
-        <nav className="tab">
-          <button
-            disabled={fileName === "script.js"}
-            onClick={() => {
-              setFileName("script.js");
-              setActiveTab("js");
-            }}
-            className={`item ${activeTab === "js" ? "activeTab" : ""}`}
-          >
-            JS
-          </button>
-          <button
-            disabled={fileName === "style.css"}
-            onClick={() => {
-              setFileName("style.css");
-              setActiveTab("css");
-            }}
-            className={`item ${activeTab === "css" ? "activeTab" : ""}`}
-          >
-            CSS
-          </button>
-          <button
-            disabled={fileName === "index.html"}
-            onClick={() => {
-              setFileName("index.html");
-              setActiveTab("html");
-            }}
-            className={`item ${activeTab === "html" ? "activeTab" : ""}`}
-          >
-            HTML
-          </button>
-        </nav>
+    <>
+      <Box sx={{ display: "flex" }}>
+        <div className="codebar">
+          <nav className="tab">
+            <button
+              disabled={fileName === "script.js"}
+              onClick={() => {
+                setFileName("script.js");
+                setActiveTab("js");
+              }}
+              className={`item ${activeTab === "js" ? "activeTab" : ""}`}
+            >
+              JS
+            </button>
+            <button
+              disabled={fileName === "style.css"}
+              onClick={() => {
+                setFileName("style.css");
+                setActiveTab("css");
+              }}
+              className={`item ${activeTab === "css" ? "activeTab" : ""}`}
+            >
+              CSS
+            </button>
+            <button
+              disabled={fileName === "index.html"}
+              onClick={() => {
+                setFileName("index.html");
+                setActiveTab("html");
+              }}
+              className={`item ${activeTab === "html" ? "activeTab" : ""}`}
+            >
+              HTML
+            </button>
+          </nav>
 
-        <div className="mainEditor">
-          <Editor
-            height="70vh"
-            theme="vs-dark"
-            path={file.name}
-            defaultLanguage={file.language}
-            defaultValue={file.value}
-            onMount={(editor) => (editorRef.current = editor)}
-            onChange={(e) => {
-              if (file.language === "css") {
-                setCss(e);
-              }
-              if (file.language === "html") {
-                setHtml(e);
-              }
-              if (file.language === "javascript") {
-                setJs(e);
-              }
-            }}
-          />
+          <div className="mainEditor">
+            <Editor
+              height="70vh"
+              theme="vs-dark"
+              path={file.name}
+              defaultLanguage={file.language}
+              defaultValue={file.value}
+              onMount={(editor) => (editorRef.current = editor)}
+              onChange={(e) => {
+                if (file.language === "css") {
+                  setCss(e);
+                }
+                if (file.language === "html") {
+                  setHtml(e);
+                }
+                if (file.language === "javascript") {
+                  setJs(e);
+                }
+              }}
+            />
+          </div>
         </div>
-      </div>
-      <Preview />
-    </Box>
+        <Preview />
+      </Box>
+    </>
   );
 }
 

@@ -13,11 +13,11 @@ import { Link } from "react-router-dom";
 
 export default function CartPage() {
   const { cart, plusCount, minusCount, deleteProductCart } = useCartContext();
-  if(cart.products.length<1){
-    return <h1>Eeeeeee</h1>
+  if (cart.products.length < 1) {
+    return <h1>Eeeeeee</h1>;
   }
   return (
-    <TableContainer sx={{padding:'10px'}} component={Paper}>
+    <TableContainer sx={{ padding: "10px" }} component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -68,7 +68,14 @@ export default function CartPage() {
         sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}
       >
         <Typography variant="h4">Total Price: {cart.totalPrice}</Typography>
-        <Button style={{backgroundColor:'black'}} component={Link} to="/success" variant="contained">Buy!🦄</Button>
+        <Button
+          style={{ backgroundColor: "black" }}
+          component={Link}
+          to="/newPage"
+          variant="contained"
+        >
+          Buy!🦄
+        </Button>
       </Box>
     </TableContainer>
   );

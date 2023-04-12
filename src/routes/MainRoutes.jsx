@@ -10,7 +10,11 @@ import SuccessPage from "../pages/SuccessPage";
 import AuthPage from "../pages/AuthPage";
 import CodeBar from "../components/codebar/CodeBar";
 import Preview from "../components/Preview/Preview";
-
+import PaymentPage from "../pages/PaymentPage";
+import NewPage from "../pages/NewPage";
+import TasksPage from "../pages/TasksPage";
+import Task1 from "../components/tasks/task1";
+import Task2 from "../components/tasks/Task2";
 
 function MainRoutes() {
   return (
@@ -20,8 +24,13 @@ function MainRoutes() {
         <Route path="/add" element={<AddProductPage />} />
         <Route path="/edit/:id" element={<EditProductPage />} />
         <Route path="/details/:id" element={<ProductDetailsPage />} />
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/newPage" element={<NewPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/compiler" element={<CodeBar />} />
+        <Route path="/tasks" element={<TasksPage />} />
+        <Route path="/task1" element={<Task1 />} />
+        <Route path="/task2" element={<Task2 />} />
       </Route>
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/success" element={<SuccessPage />} />

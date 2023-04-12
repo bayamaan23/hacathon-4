@@ -27,8 +27,11 @@ let pages = [
     title: "compiler",
     link: "/compiler",
   },
+  {
+    title: "Tasks",
+    link: "/tasks",
+  },
 ];
-
 
 const adminPages = [
   {
