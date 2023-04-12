@@ -1,6 +1,12 @@
-import { CircularProgress, LinearProgress, Pagination, Stack } from '@mui/material';
-import React from 'react'
-import ProductsList from '../components/ProductsList';
+import {
+  CircularProgress,
+  LinearProgress,
+  Pagination,
+  Stack,
+} from "@mui/material";
+import React from "react";
+import ProductsList from "../components/ProductsList";
+import StartPage from "../components/start/StartPage";
 
 function HomePage() {
   return (
@@ -12,4 +18,4 @@ function HomePage() {
   );
 }
 
-export default HomePage
+export default HomePage;

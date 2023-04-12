@@ -17,15 +17,13 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Badge } from "@mui/material";
 import { useCartContext } from "../contexts/CartContext";
 import { useAuthContext } from "../contexts/AuthContext";
+import logo from "../video/nicenice.png";
 
 let pages = [
   {
     title: "Home",
-    link: "/",
+    link: "/home",
   },
-];
-
-const adminPages = [
   {
     title: "compiler",
     link: "/compiler",
@@ -66,15 +64,9 @@ function Navbar() {
   };
 
   return (
-    <AppBar sx={{ background: "black" }} position="static">
+    <AppBar sx={{ background: "none" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon
-            sx={{
-              display: { xs: "none", md: "flex" },
-              mr: 1,
-            }}
-          />
           <Typography
             variant="h6"
             noWrap
@@ -90,7 +82,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            N.iCE
+            <img style={{ width: "120px" }} src={logo} alt="" />
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -147,7 +139,6 @@ function Navbar() {
                   ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -164,7 +155,7 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            n.ice
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {isAdmin()
@@ -174,7 +165,7 @@ function Navbar() {
                     component={Link}
                     to={page.link}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
+                    sx={{ my: 2, color: "", display: "block" }}
                   >
                     {page.title}
                   </Button>
@@ -185,7 +176,7 @@ function Navbar() {
                     component={Link}
                     to={page.link}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
+                    sx={{ my: 2, color: "black", display: "block" }}
                   >
                     {page.title}
                   </Button>

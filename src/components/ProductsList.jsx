@@ -76,7 +76,12 @@ function ProductsList() {
   }, [pageTotalCount]);
   return (
     <div>
-      <Box style={{ display: "flex", justifyContent: "space-between" }}>
+      <Box
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
         <TextField
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
