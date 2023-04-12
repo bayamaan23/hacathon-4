@@ -1,4 +1,11 @@
-import { Button, FormControl, InputLabel, MenuItem, Select, TextField } from "@mui/material";
+import {
+  Button,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  TextField,
+} from "@mui/material";
 import React, { useState } from "react";
 import { useProductContext } from "../contexts/ProductContext";
 
@@ -84,11 +91,11 @@ function AddProductPage() {
             onChange={handleChange}
             name="category"
           >
-            <MenuItem value={"men's clothing"}>Men's</MenuItem>
-            <MenuItem value={"women's clothing"}>Women's</MenuItem>
-            <MenuItem value={"pants"}>Pants</MenuItem>
-            <MenuItem value={"little Kids"}>Little Kids</MenuItem>
-            <MenuItem value={"man's shoes"}>man's shoes</MenuItem>
+            <MenuItem value={"java script"}>java script</MenuItem>
+            <MenuItem value={"CSS"}>CSS</MenuItem>
+            <MenuItem value={"CSS HTML"}>CSS HTML</MenuItem>
+            <MenuItem value={"HTML"}>HTML</MenuItem>
+            <MenuItem value={"motivation"}>motivation</MenuItem>
           </Select>
         </FormControl>
         <TextField

@@ -107,11 +107,11 @@ function ProductsList() {
             onChange={(e) => setCategory(e.target.value)}
           >
             <MenuItem value={"all"}>All</MenuItem>
-            <MenuItem value={"men's clothing"}>Men's</MenuItem>
-            <MenuItem value={"women's clothing"}>Women's</MenuItem>
-            <MenuItem value={"pants"}>Pants</MenuItem>
-            <MenuItem value={"little Kids"}>Little Kids</MenuItem>
-            <MenuItem value={"man's shoes"}>Man's shoes</MenuItem>
+            <MenuItem value={"java script"}>java script</MenuItem>
+            <MenuItem value={"CSS HTML"}>CSS HTML</MenuItem>
+            <MenuItem value={"HTML"}>HTML</MenuItem>
+            <MenuItem value={"CSS"}>CSS</MenuItem>
+            <MenuItem value={"motivation"}>motivation</MenuItem>
           </Select>
         </FormControl>
       </Box>

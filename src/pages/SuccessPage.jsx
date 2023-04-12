@@ -21,10 +21,10 @@ function SuccessPage() {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        margin:'0'
+        margin: "0",
       }}
     >
-      <h1 style={{textAlign:'center'}}>🦄Thank you for your order!🦄</h1>
+      <h1 style={{ textAlign: "center" }}>🦄thanks for the purchase!🦄</h1>
     </div>
   );
 }

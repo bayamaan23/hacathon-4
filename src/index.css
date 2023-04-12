@@ -17,3 +17,9 @@ body {
 .container {
   max-width: 1200px;
 }
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
