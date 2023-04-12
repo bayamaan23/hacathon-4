@@ -11,25 +11,9 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useProductContext } from "../contexts/ProductContext";
 import { videos } from "../video";
-import { AspectRatio, CardTravelOutlined } from "@mui/icons-material";
+import { TextField } from "@mui/material";
+import Reviews from "../components/review/Review";
 
-// const data = [
-//   {
-//     src: "https://proprikol.ru/wp-content/uploads/2020/08/krasivye-kartinki-kotikov-36.jpg",
-//     title: "Тип данных number",
-//     description: "4.21M views",
-//   },
-//   {
-//     src: "https://murmulet.com/wp-content/uploads/2016/01/Samanta-10.jpg",
-//     title: "Тип данных number.",
-//     description: "4.74M views",
-//   },
-//   {
-//     src: "https://murmulet.com/wp-content/uploads/2016/01/Samanta-10.jpg",
-//     title: "Стрелочные функции, рекурсия",
-//     description: "3.98M views",
-//   },
-// ];
 function ProductDetailsPage() {
   const { oneProduct, getOneProduct } = useProductContext();
   const { id } = useParams();
@@ -50,9 +34,9 @@ function ProductDetailsPage() {
       {oneProduct ? (
         <>
           <Card>
-            <h1 style={{ textAlign: "center" }}>Java script!!!</h1>
+            <h1 style={{ textAlign: "center" }}>N.iCE</h1>
           </Card>
-          <Card sx={{ display: "flex", height: "300px" }}>
+          <Card>
             <CardMedia
               // style={{ width: "800px", objectFit: "cover" }}
               alt="js"
@@ -71,11 +55,10 @@ function ProductDetailsPage() {
                 </Typography>
                 <Typography variant="h6">${oneProduct.price}</Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-              </CardActions>
             </Box>
+            <CardContent>              
+              <Reviews/>
+            </CardContent>
           </Card>
           <Box
             sx={{
