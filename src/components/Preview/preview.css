@@ -24,4 +24,33 @@
   height: 70px;
   background: #1e1e1e;
   border: 1px solid #333;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  padding: 0 15px;
+  gap: 15px;
+  border-bottom: 2px solid #333;
+}
+
+.check{
+  display: flex;
+  height: 50px;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  transition: 0.4s;
+}
+
+.check:hover{
+  background-color: rgb(127, 110, 13);
 }
