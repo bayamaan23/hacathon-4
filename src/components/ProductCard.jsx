@@ -19,9 +19,6 @@ import { useAuthContext } from "../contexts/AuthContext";
 import video from "../video/video-1.mp4";
 import { videos } from "../video";
 
-
-
-
 function ProductCard({ item, index }) {
   const { deleteProduct } = useProductContext();
   const { addProductToCart, deleteProductCart, isAllReadyInCart } =

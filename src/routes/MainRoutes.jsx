@@ -17,6 +17,9 @@ import Task1 from "../components/tasks/task1";
 import Task2 from "../components/tasks/Task2";
 import Task3 from "../components/tasks/Task3";
 
+import StartPage from "../components/start/StartPage";
+
+
 function MainRoutes() {
   return (
     <Routes>
@@ -34,6 +37,7 @@ function MainRoutes() {
         <Route path="/task2" element={<Task2 />} />
         <Route path="/task3" element={<Task3 />} />
       </Route>
+      <Route path="/" element={<StartPage />} />
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/success" element={<SuccessPage />} />
     </Routes>

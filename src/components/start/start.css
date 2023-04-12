@@ -1,0 +1,301 @@
+.container-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bg {
+  background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.logo-web {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  -webkit-animation: 2s ease-in 0s 1 animated-text;
+}
+
+.main-content {
+  display: flex;
+}
+
+.wrapper-right {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.text {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+.animated-text {
+  font-size: 60px;
+  color: aliceblue;
+  -webkit-animation: 2s ease-in 0s 1 animated-text;
+}
+
+@keyframes animated-text {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.disc-start {
+  color: aliceblue;
+  -webkit-animation: 2s ease-in 0s 1 animated-text;
+  opacity: 80%;
+  font-size: 20px;
+}
+
+.btn-start {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: #007acc;
+  border: none;
+  transition: 0.2s linear;
+  -webkit-animation: 2s ease-in 0s 1 animated-text;
+}
+
+.btn-start:hover {
+  background: #9ed9e4;
+  color: #007acc;
+  box-shadow: 0 0 20px #007acc;
+}
+
+.wrapper-left {
+  display: flex;
+}
+
+.main-content-left {
+  display: flex;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+
+.logo {
+  background: url(http://www.volkanaltinbas.com/images/logo_volkanaltinbas_3d.gif)
+    0 no-repeat;
+  cursor: pointer;
+  -webkit-animation: 2s ease-in 0s 1 animated-text;
+}
+
+.wrapper {
+  font-size: 14px;
+  line-height: 40px;
+  top: 70px;
+  left: 140px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 50%;
+  -webkit-animation-name: ciycle;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 6s;
+}
+
+.box {
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.va {
+  background: black;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: -70px;
+  left: 0;
+  height: 140px;
+  width: 140px;
+  text-align: center;
+  align-items: baseline;
+  font-size: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 1px 1px 2px 3px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -webkit-animation-name: ciycle2;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 2s;
+}
+
+.va.type2 {
+  -webkit-transform: rotateY(180deg) translateZ(1px);
+  -webkit-animation-name: ciycle3;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 2s;
+}
+.logo-icon {
+  width: 50%;
+}
+
+.content-2 {
+  font-size: 60px;
+  padding: 50px 20px;
+}
+.tags {
+  top: 90px;
+  left: 150px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-out;
+  -webkit-transition-delay: 0.3s;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: #fff;
+  -webkit-animation-name: tag;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 2.5s;
+}
+
+.tag:nth-child(1) {
+  -webkit-animation-delay: 0;
+}
+
+.tag:nth-child(2) {
+  -webkit-animation-delay: 0.5s;
+}
+
+.tag:nth-child(3) {
+  -webkit-animation-delay: 1s;
+}
+
+.tag:nth-child(4) {
+  -webkit-animation-delay: 1.5s;
+}
+
+.tag:nth-child(5) {
+  -webkit-animation-delay: 2s;
+}
+
+.smile {
+  -webkit-transition: all 0.6s ease-out;
+}
+
+.one {
+  margin-top: 120px;
+  border-radius: 2px;
+  position: absolute;
+  font-size: 30px;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  opacity: 0.5;
+  line-height: 60px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 1s ease-in-out;
+}
+
+.one {
+  background: #007acc;
+  -webkit-transform: translateY(0) translateZ(-20px);
+}
+
+.logo:hover .box {
+  background: gray;
+  opacity: 0.25;
+}
+.logo:hover .one {
+  -webkit-transform: rotateX(90deg) translateZ(20px) translateY(40px);
+  -webkit-transform-origin: 100%;
+}
+.logo:hover .two {
+  -webkit-transform: rotateX(90deg) translateY(0) translateZ(20px);
+  opacity: 1;
+}
+.logo:hover .three {
+  -webkit-transform: rotateX(-90deg) translateY(40px) translateZ(-20px);
+}
+.logo:hover .five {
+  -webkit-transform: rotateZ(90deg) rotateY(-90deg) translateX(0)
+    translateY(40px) translateZ(20px);
+}
+.logo:hover .six {
+  -webkit-transform: rotateY(90deg) translateX(20px) translateZ(20px)
+    translateY(-20px) rotateX(90deg);
+  -webkit-transform-origin: 100%;
+}
+
+.logo:hover .boxes {
+  top: 40px;
+}
+
+.logo:hover .va {
+  top: -75px;
+}
+.logo:hover .tags {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform-origin: 50%;
+  -webkit-transform: rotateX(-200deg) rotateY(-180deg) rotateZ(-180deg);
+  left: 150px;
+  top: 80px;
+  opacity: 1;
+}
+
+@keyframes ciycle {
+  from {
+    -webkit-transform: rotateX(-25deg) rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateX(-25deg) rotateY(360deg);
+  }
+}
+
+@keyframes ciycle2 {
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+@keyframes ciycle3 {
+  from {
+    -webkit-transform: rotateY(180deg) translateZ(1px);
+  }
+  to {
+    -webkit-transform: rotateY(-180deg) translateZ(1px);
+  }
+}
+
+@keyframes tag {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: -55px;
+  }
+}
