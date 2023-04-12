@@ -61,7 +61,7 @@ function Reviews() {
           className="reviews__input"
           placeholder="Оставьте отзыв"
         ></textarea>
-        <button type="submit" className="reviews__button">
+        <button className="button-comment" type="submit" >
           Оставить отзыв
         </button>
       </form>
