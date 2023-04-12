@@ -13,6 +13,7 @@ import { useProductContext } from "../contexts/ProductContext";
 import { videos } from "../video";
 import { TextField } from "@mui/material";
 import Reviews from "../components/review/Review";
+import Post from "../components/post/post";
 
 function ProductDetailsPage() {
   const { oneProduct, getOneProduct } = useProductContext();
@@ -54,6 +55,7 @@ function ProductDetailsPage() {
                   {oneProduct.description}
                 </Typography>
                 <Typography variant="h6">${oneProduct.price}</Typography>
+                <Post/>
               </CardContent>
             </Box>
             <CardContent>              
