@@ -67,7 +67,7 @@ export default function CartPage() {
       <Box
         sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}
       >
-        <Typography variant="h4">Total Price: {cart.totalPrice}</Typography>
+        <Typography variant="h4">Total Price: ${cart.totalPrice}</Typography>
         <Button style={{backgroundColor:'black'}} component={Link} to="/success" variant="contained">Buy!🦄</Button>
       </Box>
     </TableContainer>
