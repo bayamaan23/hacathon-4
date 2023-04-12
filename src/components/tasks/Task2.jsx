@@ -1,9 +1,13 @@
 import React, { useContext } from "react";
 import CodeBar from "../codebar/CodeBar";
 import { editorContext } from "../../contexts/CompilerContext";
+import { useNavigate } from "react-router-dom";
+import TasksPage from "../../pages/TasksPage";
 
 function Task2() {
   const { html, css, js } = useContext(editorContext);
+  const navigation = useNavigate();
+
   let answer = "<button>Click me!</button>";
   let cssAnswer =
     "button{height:50px;width:100px;background-color:green;border-radius:4px;}";
@@ -23,21 +27,44 @@ function Task2() {
   }
   return (
     <div>
-      <h1 style={{ color: "bisque" }}>
-        Создайте кнопку с текстом "Click me!" и задайте ей следующие стили:
-        ширина - 50px, длина - 100px, цвет кнопки - зеленый, округление краев
-        4px
-      </h1>
-      <button
-        onClick={() => {
-          console.log(html.replace(/\s/g, ""));
-          checker();
-        }}
-        className="check"
-      >
-        CHECK
-      </button>
+      <TasksPage />
+      <div className="task">
+        <h1 style={{ color: "azure", marginBottom: 5 }}>Задание 2</h1>
+        <p style={{ color: "azure" }}>
+          Создайте кнопку с текстом "Click me!" и задайте ей следующие стили:
+          ширина - 50px, длина - 100px, цвет кнопки - зеленый, округление краев
+          4px.
+        </p>
+      </div>
+
       <CodeBar />
+      <div className="box">
+        <button
+          className="box-button"
+          onClick={() => {
+            navigation("/task1");
+          }}
+        >
+          PREVIOUS
+        </button>
+        <button
+          onClick={() => {
+            console.log(html.replace(/\s/g, ""));
+            checker();
+          }}
+          className="check"
+        >
+          CHECK
+        </button>
+        <button
+          className="box-button"
+          onClick={() => {
+            navigation("/task3");
+          }}
+        >
+          NEXT
+        </button>
+      </div>
     </div>
   );
 }

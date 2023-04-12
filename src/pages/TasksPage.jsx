@@ -13,6 +13,9 @@ function TasksPage() {
       <button className="number" onClick={() => navigate("/task2")}>
         2
       </button>
+      <button className="number" onClick={() => navigate("/task3")}>
+        3
+      </button>
     </div>
   );
 }

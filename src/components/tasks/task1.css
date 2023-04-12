@@ -1,6 +1,37 @@
+.task{
+    width: 100%;
+    background: #1e1e1e;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    
+}
 
 .check {
     background-color: goldenrod;
     width: 200px;
     height: 50px;
+    margin: 0 200px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.box-button{
+    width: 200px;
+    height: 50px;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.box-button:hover{
+    background:  rgb(31, 98, 74);
 }

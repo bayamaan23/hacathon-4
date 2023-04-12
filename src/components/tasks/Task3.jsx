@@ -1,39 +1,48 @@
 import React, { useContext } from "react";
 import CodeBar from "../codebar/CodeBar";
-import Preview from "../Preview/Preview";
 import { editorContext } from "../../contexts/CompilerContext";
-import "./task1.css";
 import { useNavigate } from "react-router-dom";
 import TasksPage from "../../pages/TasksPage";
-import { runConfetti } from "../../utils/confetti";
 
-function Task1() {
+function Task3() {
   const { html, css, js } = useContext(editorContext);
   const navigation = useNavigate();
-  let answer =
-    "<h1>Welcome to the club, buddy</h1><p>First rule of fight club is...</p>";
+  let htmlAnswer =
+    "<strong>text</strong><strong>text</strong><strong>text</strong>";
+  let jsAnswer =
+    "let strong=document.querySelectorAll(`strong`);strong.forEach((item) => {item.style.color=`green`})";
 
   function checker() {
-    if (html.replace(/\s/g, "") == answer.replace(/\s/g, "")) {
+    if (
+      html.replace(/\s/g, "") == htmlAnswer.replace(/\s/g, "") &&
+      js.replace(/\s/g, "") == jsAnswer.replace(/\s/g, "")
+    ) {
       alert("congrats!");
-      runConfetti();
     } else {
       alert("you probably have mistake in your code");
     }
   }
   return (
-    <>
+    <div>
       <TasksPage />
       <div className="task">
-        <h1 style={{ color: "azure", marginBottom: 5 }}>Задание 1</h1>
+        <h1 style={{ color: "azure", marginBottom: 5 }}>Задание 3</h1>
         <p style={{ color: "azure" }}>
-          Выведите на экран заголовок первого уровня "Welcome to the club,
-          buddy", а под ним параграф "First rule of fight club is..."
+          Добавьте на страницу три тега strong с содержимым "text". Найдите все
+          HTML-теги strong и окрасьте их в зеленый цвет.
         </p>
       </div>
+
       <CodeBar />
       <div className="box">
-        <h1 style={{ width: 200 }}></h1>
+        <button
+          className="box-button"
+          onClick={() => {
+            navigation("/task2");
+          }}
+        >
+          PREVIOUS
+        </button>
         <button
           onClick={() => {
             console.log(html.replace(/\s/g, ""));
@@ -46,14 +55,14 @@ function Task1() {
         <button
           className="box-button"
           onClick={() => {
-            navigation("/task2");
+            navigation("/task3");
           }}
         >
           NEXT
         </button>
       </div>
-    </>
+    </div>
   );
 }
 
-export default Task1;
+export default Task3;

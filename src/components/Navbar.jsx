@@ -29,7 +29,7 @@ let pages = [
   },
   {
     title: "Tasks",
-    link: "/tasks",
+    link: "/task1",
   },
 ];
 
