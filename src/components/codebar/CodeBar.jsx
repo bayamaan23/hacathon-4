@@ -27,7 +27,7 @@ function CodeBar() {
   }, [activeTab]);
   return (
     <>
-      <Box sx={{ display: "flex" }}>
+      <Box className="box" sx={{ display: "flex" }}>
         <div className="codebar">
           <nav className="tab">
             <button

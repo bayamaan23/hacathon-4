@@ -31,11 +31,13 @@ function ProductDetailsPage() {
   console.log(newId, id, videos[newId[1]]);
 
   return (
-    <>
+    <div>
       {oneProduct ? (
         <>
-          <Card>
-            <h1 style={{ textAlign: "center" }}>N.iCE</h1>
+          <Card
+            style={{ borderRadius: "10px 10px 0 0", background: "#b8e2e5" }}
+          >
+            <h1 style={{ padding: "10px" }}>LECTION</h1>
           </Card>
           <Card>
             <CardMedia
@@ -55,11 +57,11 @@ function ProductDetailsPage() {
                   {oneProduct.description}
                 </Typography>
                 <Typography variant="h6">${oneProduct.price}</Typography>
-                <Post/>
+                <Post />
               </CardContent>
             </Box>
-            <CardContent>              
-              <Reviews/>
+            <CardContent>
+              <Reviews />
             </CardContent>
           </Card>
           <Box
@@ -80,7 +82,7 @@ function ProductDetailsPage() {
       ) : (
         <h1>Oooops...</h1>
       )}
-    </>
+    </div>
   );
 }
 

@@ -58,6 +58,7 @@ function AddProductPage() {
           margin: "0 auto",
           flexDirection: "column",
           gap: "10px",
+          background: "#b8e2e5",
         }}
       >
         <TextField
@@ -105,7 +106,7 @@ function AddProductPage() {
           variant="outlined"
           onChange={(e) => handleChange(e)}
         />
-        <Button type="submit" variant="contained">
+        <Button style={{background:'black'}} type="submit" variant="contained">
           Add
         </Button>
       </form>

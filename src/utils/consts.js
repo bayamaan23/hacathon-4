@@ -7,7 +7,7 @@ export const ACTIONS = {
   cartLength: "cartLength",
   user: "user",
 };
-export const LIMIT = 3;
+export const LIMIT = 6;
 
 export const files = {
   "script.js": {

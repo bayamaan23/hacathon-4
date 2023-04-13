@@ -69,7 +69,7 @@ export default function CartPage() {
       >
 
 
-        <Typography variant="h4">Total Price: {cart.totalPrice}</Typography>
+        <Typography variant="h4">Total Price: ${cart.totalPrice}</Typography>
         <Button
           style={{ backgroundColor: "black" }}
           component={Link}
