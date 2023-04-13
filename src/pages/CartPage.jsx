@@ -73,7 +73,7 @@ export default function CartPage() {
         <Button
           style={{ backgroundColor: "black" }}
           component={Link}
-          to="/newPage"
+          to="/payment"
           variant="contained"
         >
           Buy!🦄

@@ -1,99 +1,79 @@
-// import React from "react";
-// import Cards from "react-credit-cards";
-// import "react-credit-cards/es/styles-compiled.css";
-// import "../components/css/Payment.css";
-// import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import Cards from "react-credit-cards";
+import "react-credit-cards/es/styles-compiled.css";
+import "../components/css/Payment.css";
+import { useNavigate } from "react-router-dom";
 
-// export default class PaymentForm extends React.Component {
-//   state = {
-//     cvc: "",
-//     expiry: "",
-//     focus: "",
-//     name: "",
-//     number: "",
-//   };
+function PaymentPage() {
+  const [number, setNumber] = useState("");
+  const [name, setName] = useState("");
+  const [expiry, setExpiry] = useState("");
+  const [cvc, setCvc] = useState("");
+  const [focus, setFocus] = useState("");
 
-//   handleInputFocus = (e) => {
-//     this.setState({ focus: e.target.name });
-//   };
+  const navigation = useNavigate();
 
-//   handleInputChange = (e) => {
-//     const { name, value } = e.target;
+  return (
+    <div
+      onSubmit={(e) => {
+        e.preventDefault();
+        if (!number || !name || !expiry || !cvc) {
+          alert("Fill all the fields!");
+        } else {
+          navigation("/success");
+        }
+      }}
+    >
+      <Cards
+        number={number}
+        name={name}
+        expiry={expiry}
+        cvc={cvc}
+        focus={focus}
+      />
+      <form>
+        <input
+          type="tel"
+          name="number"
+          className="payment-input"
+          placeholder="Card Number"
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
+          onFocus={(e) => setFocus(e.target.name)}
+        />
+        <input
+          type="text"
+          name="name"
+          className="payment-input"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          onFocus={(e) => setFocus(e.target.name)}
+        />
+        <input
+          type="tel"
+          name="expiry"
+          className="payment-input"
+          placeholder="Expiry"
+          value={expiry}
+          onChange={(e) => setExpiry(e.target.value)}
+          onFocus={(e) => setFocus(e.target.name)}
+        />
+        <input
+          className="payment-input"
+          type="tel"
+          name="cvc"
+          placeholder="CVC"
+          value={cvc}
+          onChange={(e) => setCvc(e.target.value)}
+          onFocus={(e) => setFocus(e.target.name)}
+        />
+        <button class="button-a">
+          <span class="button-span">Pay</span>
+        </button>
+      </form>
+    </div>
+  );
+}
 
-//     this.setState({ [name]: value });
-//   };
-
-//   render() {
-//     return (
-//       <div id="PaymentForm">
-//         <Cards
-//           cvc={this.state.cvc}
-//           expiry={this.state.expiry}
-//           focused={this.state.focus}
-//           name={this.state.name}
-//           number={this.state.number}
-//         />
-//         <form>
-//           <div class="input-field number">
-//             <input
-//               type="tel"
-//               name="number"
-//               onChange={this.handleInputChange}
-//               onFocus={this.handleInputFocus}
-//               required
-//             />
-//             <label>Card Number</label>
-//           </div>
-
-//           <div className="input-field">
-//             <input
-//               type="tel"
-//               name="name"
-//               onChange={this.handleInputChange}
-//               onFocus={this.handleInputFocus}
-//             />
-//             <label>Name</label>
-//           </div>
-//           <div
-//             style={{
-//               width: 390,
-//               display: "flex",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <div className="input-field">
-//               <input
-//                 style={{ width: 170 }}
-//                 type="text"
-//                 name="expiry"
-//                 onChange={this.handleInputChange}
-//                 onFocus={this.handleInputFocus}
-//               />
-//               <label>MM/YY Expiry</label>
-//             </div>
-
-//             <div className="input-field">
-//               <input
-//                 style={{ width: 170 }}
-//                 type="text"
-//                 name="cvc"
-//                 onChange={this.handleInputChange}
-//                 onFocus={this.handleInputFocus}
-//               />
-//               <label>СVC</label>
-//             </div>
-//           </div>
-
-//           <button
-//             class="button-a"
-//             onClick={() => {
-//               alert("Hello");
-//             }}
-//           >
-//             <span class="button-span">Pay</span>
-//           </button>
-//         </form>
-//       </div>
-//     );
-//   }
-// }
+export default PaymentPage;

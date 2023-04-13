@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "../components/css/profile.css";
+import { useNavigate } from "react-router";
 
 function ProfilePage() {
   const [name, setName] = useState("John Doe");
   const [age, setAge] = useState(30);
   const [email, setEmail] = useState("johndoe@example.com");
   const [photo, setPhoto] = useState("");
+  const navigate = useNavigate();
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -55,12 +57,11 @@ function ProfilePage() {
             <input type="email" value={email} onChange={handleEmailChange} />
           </label>
           <br />
-          <button type="submit">Save</button>
+          <button onClick={()=>navigate('/home')} type="submit">Save</button>
         </form>
       </div>
     </div>
   );
 }
-
 
 export default ProfilePage;
