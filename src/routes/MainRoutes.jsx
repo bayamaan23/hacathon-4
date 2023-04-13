@@ -20,6 +20,8 @@ import StartPage from "../components/start/StartPage";
 import ProfilePage from "../pages/ProfilePage";
 
 import SavedPage from "../pages/SavedPage";
+import Comments from "../components/Comments";
+import Modal from "../components/Modal";
 
 function MainRoutes() {
   return (
@@ -30,15 +32,16 @@ function MainRoutes() {
         <Route path="/edit/:id" element={<EditProductPage />} />
         <Route path="/details/:id" element={<ProductDetailsPage />} />
         <Route path="/payment" element={<PaymentPage />} />
-
         <Route path="/saved" element={<SavedPage />} />
+        <Route path="/modal" element={<Modal />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/compiler" element={<CodeBar />} />
+        <Route path="/comments" element={<Comments />} />
         <Route path="/tasks" element={<TasksPage />} />
         <Route path="/task1" element={<Task1 />} />
         <Route path="/task2" element={<Task2 />} />
         <Route path="/task3" element={<Task3 />} />
-        <Route path="/profile" element={<ProfilePage/>}/>
+        <Route path="/profile" element={<ProfilePage />} />
       </Route>
       <Route path="/" element={<StartPage />} />
       <Route path="/auth" element={<AuthPage />} />

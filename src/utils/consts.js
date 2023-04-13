@@ -1,4 +1,11 @@
 export const API = "http://localhost:8000/products";
+export const API2=  "http://localhost:8001/comments";
+
+export const ACTIONS2 = {
+  comments: "comments",
+  oneComment: "oneComment",
+};
+
 export const ACTIONS = {
   products: "products",
   oneProduct: "oneProduct",

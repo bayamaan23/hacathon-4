@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
@@ -32,7 +31,7 @@ function PaymentPage() {
         cvc={cvc}
         focus={focus}
       />
-      <form>
+      <form className="payment-form">
         <input
           type="tel"
           name="number"
