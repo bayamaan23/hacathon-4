@@ -34,6 +34,10 @@ let pages = [
     title: "Tasks",
     link: "/task1",
   },
+  {
+    title: "Comments",
+    link: "/comments",
+  },
 ];
 
 const adminPages = [
@@ -258,7 +262,9 @@ function Navbar() {
                   handleCloseUserMenu();
                 }}
               >
-                <Typography component={Link} to={'/profile'} textAlign="center">Profile</Typography>
+                <Typography component={Link} to={"/profile"} textAlign="center">
+                  Profile
+                </Typography>
               </MenuItem>
               <MenuItem
                 onClick={() => {

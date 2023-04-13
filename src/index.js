@@ -10,21 +10,25 @@ import AuthContext from "./contexts/AuthContext";
 
 import CompilerContext from "./contexts/CompilerContext";
 import SavedContext from "./contexts/SavedContext";
+import CommentsContext from "./contexts/CommentsContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <ProductContext>
+      <CommentsContext>
+
       <CartContext>
         <SavedContext>
-        <AuthContext>
-          <CompilerContext>
-            <ToastiFy />
-            <App />
-          </CompilerContext>
-        </AuthContext>
+          <AuthContext>
+            <CompilerContext>
+              <ToastiFy />
+              <App />
+            </CompilerContext>
+          </AuthContext>
         </SavedContext>
       </CartContext>
+      </CommentsContext>
     </ProductContext>
   </BrowserRouter>
 );

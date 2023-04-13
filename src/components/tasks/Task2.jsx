@@ -13,12 +13,15 @@ function Task2() {
     "button{height:50px;width:100px;background-color:green;border-radius:4px;}";
   let cssAnswer2 =
     "button{height:50px;width:100px;background:green;border-radius:4px;}";
+  let cssAnswer3 =
+    "button{width:100px;height:50px;background:green;border-radius:4px;}";
 
   function checker() {
     if (
       (html.replace(/\s/g, "") == answer.replace(/\s/g, "") &&
         css.replace(/\s/g, "") == cssAnswer.replace(/\s/g, "")) ||
-      css.replace(/\s/g, "") == cssAnswer2.replace(/\s/g, "")
+      css.replace(/\s/g, "") == cssAnswer2.replace(/\s/g, "") ||
+      css.replace(/\s/g, "") == cssAnswer3.replace(/\s/g, "")
     ) {
       alert("congrats!");
     } else {
