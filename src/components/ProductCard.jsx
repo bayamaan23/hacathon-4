@@ -18,11 +18,16 @@ import { useCartContext } from "../contexts/CartContext";
 import { useAuthContext } from "../contexts/AuthContext";
 import video from "../video/video-1.mp4";
 import { videos } from "../video";
+import { useSavedContext } from "../contexts/SavedContext";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
 
 function ProductCard({ item, index }) {
   const { deleteProduct } = useProductContext();
   const { addProductToCart, deleteProductCart, isAllReadyInCart } =
     useCartContext();
+  const { addProductToSaved, deleteProductSaved, isAllReadyInSaved } =
+    useSavedContext();
   const { isAdmin } = useAuthContext();
   return (
     <Grid item md={4} sm={6} xs={12}>
@@ -99,6 +104,15 @@ function ProductCard({ item, index }) {
           ) : (
             <IconButton onClick={() => addProductToCart(item)}>
               <AddShoppingCartIcon color="success" />
+            </IconButton>
+          )}
+          {isAllReadyInSaved(item.id) ? (
+            <IconButton onClick={() => deleteProductSaved(item.id)}>
+              <BookmarkIcon color="black" />
+            </IconButton>
+          ) : (
+            <IconButton onClick={() => addProductToSaved(item)}>
+              <BookmarkBorderIcon color="black" />
             </IconButton>
           )}
         </CardActions>

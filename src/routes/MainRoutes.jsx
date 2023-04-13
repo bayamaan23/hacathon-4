@@ -11,6 +11,7 @@ import AuthPage from "../pages/AuthPage";
 import CodeBar from "../components/codebar/CodeBar";
 import Preview from "../components/Preview/Preview";
 import PaymentPage from "../pages/PaymentPage";
+import NewPage from "../pages/NewPage";
 import TasksPage from "../pages/TasksPage";
 import Task1 from "../components/tasks/task1";
 import Task2 from "../components/tasks/Task2";
@@ -19,6 +20,7 @@ import Task3 from "../components/tasks/Task3";
 import StartPage from "../components/start/StartPage";
 import ProfilePage from "../pages/ProfilePage";
 
+import SavedPage from "../pages/SavedPage";
 
 function MainRoutes() {
   return (
@@ -29,6 +31,7 @@ function MainRoutes() {
         <Route path="/edit/:id" element={<EditProductPage />} />
         <Route path="/details/:id" element={<ProductDetailsPage />} />
         <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/saved" element={<SavedPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/compiler" element={<CodeBar />} />
         <Route path="/tasks" element={<TasksPage />} />
