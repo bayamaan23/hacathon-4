@@ -42,7 +42,7 @@ const adminPages = [
     link: "/add",
   },
 ];
-const settings = ["Profile", "Account", "Dashboard"];
+const settings = ["Account", "Dashboard"];
 
 function Navbar() {
   const { cartLength, getCart } = useCartContext();
@@ -103,7 +103,7 @@ function Navbar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="black"
             >
               <MenuIcon />
             </IconButton>
@@ -162,7 +162,7 @@ function Navbar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "black",
               textDecoration: "none",
             }}
           >
@@ -196,6 +196,7 @@ function Navbar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <IconButton
+              style={{ color: "black" }}
               component={Link}
               to="/saved"
               size="large"
@@ -222,7 +223,12 @@ function Navbar() {
                 </IconButton>
               </Tooltip>
             ) : (
-              <Button component={Link} to="/auth" color="inherit">
+              <Button
+                style={{ color: "black" }}
+                component={Link}
+                to="/auth"
+                color="inherit"
+              >
                 Login
               </Button>
             )}
@@ -247,6 +253,13 @@ function Navbar() {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
+              <MenuItem
+                onClick={() => {
+                  handleCloseUserMenu();
+                }}
+              >
+                <Typography component={Link} to={'/profile'} textAlign="center">Profile</Typography>
+              </MenuItem>
               <MenuItem
                 onClick={() => {
                   handleCloseUserMenu();

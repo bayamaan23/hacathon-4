@@ -17,6 +17,7 @@ import Task2 from "../components/tasks/Task2";
 import Task3 from "../components/tasks/Task3";
 
 import StartPage from "../components/start/StartPage";
+import ProfilePage from "../pages/ProfilePage";
 
 import SavedPage from "../pages/SavedPage";
 
@@ -37,6 +38,7 @@ function MainRoutes() {
         <Route path="/task1" element={<Task1 />} />
         <Route path="/task2" element={<Task2 />} />
         <Route path="/task3" element={<Task3 />} />
+        <Route path="/profile" element={<ProfilePage/>}/>
       </Route>
       <Route path="/" element={<StartPage />} />
       <Route path="/auth" element={<AuthPage />} />
