@@ -10,7 +10,7 @@ function SuccessPage() {
     clearCart();
     runConfetti();
     setTimeout(() => {
-      navigate("/");
+      navigate("/home");
     }, 5000);
   }, []);
   return (
@@ -24,7 +24,9 @@ function SuccessPage() {
         margin: "0",
       }}
     >
-      <h1 style={{ textAlign: "center" }}>🦄thanks for the purchase!🦄</h1>
+      <h1 style={{ textAlign: "center", color: "white" }}>
+        Thanks for the purchase!
+      </h1>
     </div>
   );
 }

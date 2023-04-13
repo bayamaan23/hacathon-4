@@ -18,6 +18,8 @@ import { Badge } from "@mui/material";
 import { useCartContext } from "../contexts/CartContext";
 import { useAuthContext } from "../contexts/AuthContext";
 import logo from "../video/nicenice.png";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import { useSavedContext } from "../contexts/SavedContext";
 
 let pages = [
   {
@@ -44,7 +46,12 @@ const settings = ["Profile", "Account", "Dashboard"];
 
 function Navbar() {
   const { cartLength, getCart } = useCartContext();
+  const { savedLength, getSaved } = useSavedContext();
   const { user, logout, isAdmin } = useAuthContext();
+
+  React.useEffect(() => {
+    getSaved();
+  }, []);
 
   React.useEffect(() => {
     getCart();
@@ -188,6 +195,16 @@ function Navbar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
+            <IconButton
+              component={Link}
+              to="/saved"
+              size="large"
+              color="inherit"
+            >
+              <Badge badgeContent={savedLength} color="error">
+                <BookmarkIcon />
+              </Badge>
+            </IconButton>
             <IconButton
               component={Link}
               to="/cart"
