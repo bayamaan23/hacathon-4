@@ -30,8 +30,8 @@ function Reviews() {
 
 
   return (
-    <div className="reviews">
-      <h2>Отзывы:</h2>
+    <div className="reviews" style={{borderRadius:'0 0 20px 20px'}}>
+      <h2>О нас говорят:</h2>
       <ul className="reviews__list">
         {reviews.map((review, index) => (
           <li key={index} className="reviews__item">
@@ -45,6 +45,7 @@ function Reviews() {
           Ваше имя:
         </label>
         <input
+        placeholder="Введите имя"
           type="text"
           id="name"
           name="name"

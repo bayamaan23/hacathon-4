@@ -18,11 +18,12 @@ function Post() {
   };
 
   return (
-    <div style={{display:'flex'}}>
+    <div style={{ display: "flex" }}>
       <button
+        id="like-button"
         style={{
           border: "none",
-          width: "50px",
+
           height: "30px",
           backgroundColor: "white",
         }}
@@ -34,7 +35,7 @@ function Post() {
           <FavoriteBorderOutlinedIcon color="error" />
         )}
       </button>
-      <p>
+      <p style={{padding:'0 5px'}}>
         {likes} {likes === 1 ? "лайк" : "лайков"}
       </p>
     </div>
