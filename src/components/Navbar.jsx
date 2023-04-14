@@ -22,27 +22,19 @@ import BookmarkIcon from "@mui/icons-material/Bookmark";
 import { useSavedContext } from "../contexts/SavedContext";
 import "../components/css/homePage.css";
 
-
 let pages = [
+  {
+    title: "Home",
+    link: "/main",
+  },
   {
     title: "Courses",
     link: "/home",
   },
-  {
-    title: "compiler",
-    link: "/compiler",
-  },
+
   {
     title: "Tasks",
     link: "/task1",
-  },
-  {
-    title: "Home",
-    link: "/main",
-    },
-    {
-    title: "Comments",
-    link: "/comments",
   },
 ];
 
@@ -92,7 +84,7 @@ function Navbar() {
             variant="h6"
             noWrap
             component={Link}
-            to="/"
+            to="/main"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -222,7 +214,7 @@ function Navbar() {
               size="large"
               color="inherit"
             >
-              <Badge style={{color:'black'}} badgeContent={cartLength}>
+              <Badge style={{ color: "black" }} badgeContent={cartLength}>
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
