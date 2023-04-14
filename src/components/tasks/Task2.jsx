@@ -29,11 +29,11 @@ function Task2() {
     }
   }
   return (
-    <div>
+    <div style={{ background: "#b8e2e5" }}>
       <TasksPage />
       <div className="task">
-        <h1 style={{ color: "azure", marginBottom: 5 }}>Задание 2</h1>
-        <p style={{ color: "azure" }}>
+        <h1 style={{ color: "black", marginBottom: 5 }}>Задание 2</h1>
+        <p style={{ color: "black" }}>
           Создайте кнопку с текстом "Click me!" и задайте ей следующие стили:
           ширина - 50px, длина - 100px, цвет кнопки - зеленый, округление краев
           4px.

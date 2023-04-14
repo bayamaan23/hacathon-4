@@ -1,11 +1,11 @@
 .task{
     width: 100%;
-    background: #1e1e1e;
+    background: #b8e2e5;
     text-align: center;
     padding: 20px 0;
     margin-bottom: 20px;
     border-radius: 7px;
-    
+    color: black;
 }
 
 .check {
