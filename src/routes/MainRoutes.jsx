@@ -18,13 +18,13 @@ import Task2 from "../components/tasks/Task2";
 import Task3 from "../components/tasks/Task3";
 
 import StartPage from "../components/start/StartPage";
-
+import AboutUsPage from "../pages/AboutUsPage";
 
 function MainRoutes() {
   return (
     <Routes>
       <Route element={<MainLayoute />}>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/add" element={<AddProductPage />} />
         <Route path="/edit/:id" element={<EditProductPage />} />
         <Route path="/details/:id" element={<ProductDetailsPage />} />
@@ -37,6 +37,7 @@ function MainRoutes() {
         <Route path="/task2" element={<Task2 />} />
         <Route path="/task3" element={<Task3 />} />
       </Route>
+      <Route path="/main" element={<AboutUsPage />} />
       <Route path="/" element={<StartPage />} />
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/success" element={<SuccessPage />} />

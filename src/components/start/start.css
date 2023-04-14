@@ -11,7 +11,7 @@
 }
 
 .logo-web {
-  margin-top: 50px;
+  padding-top: 50px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
@@ -100,8 +100,6 @@ h1 {
 .wrapper {
   font-size: 14px;
   line-height: 40px;
-  top: 70px;
-  left: 140px;
   height: 100px;
   width: 100px;
   border-radius: 50%;
@@ -113,7 +111,7 @@ h1 {
   -webkit-animation-duration: 6s;
 }
 
-.box {
+.start-box {
   -webkit-transition: all 1s ease-in-out;
 }
 
@@ -122,7 +120,7 @@ h1 {
   color: #fff;
   border-radius: 50%;
   position: absolute;
-  top: -70px;
+  top: -30px;
   left: 0;
   height: 140px;
   width: 140px;
@@ -201,7 +199,7 @@ h1 {
   -webkit-transition: all 0.6s ease-out;
 }
 
-.one {
+.one-box {
   margin-top: 120px;
   border-radius: 2px;
   position: absolute;
@@ -217,33 +215,17 @@ h1 {
   -webkit-transition: all 1s ease-in-out;
 }
 
-.one {
+.one-box {
   background: #007acc;
   -webkit-transform: translateY(0) translateZ(-20px);
 }
 
-.logo:hover .box {
+.logo:hover .one-box {
   background: gray;
   opacity: 0.25;
 }
-.logo:hover .one {
+.logo:hover .one-box {
   -webkit-transform: rotateX(90deg) translateZ(20px) translateY(40px);
-  -webkit-transform-origin: 100%;
-}
-.logo:hover .two {
-  -webkit-transform: rotateX(90deg) translateY(0) translateZ(20px);
-  opacity: 1;
-}
-.logo:hover .three {
-  -webkit-transform: rotateX(-90deg) translateY(40px) translateZ(-20px);
-}
-.logo:hover .five {
-  -webkit-transform: rotateZ(90deg) rotateY(-90deg) translateX(0)
-    translateY(40px) translateZ(20px);
-}
-.logo:hover .six {
-  -webkit-transform: rotateY(90deg) translateX(20px) translateZ(20px)
-    translateY(-20px) rotateX(90deg);
   -webkit-transform-origin: 100%;
 }
 

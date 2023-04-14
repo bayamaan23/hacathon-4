@@ -1,89 +1,85 @@
-form{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    align-items: center;
-
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
 }
 
-.input-field{
-    position: relative;
+.input-field {
+  position: relative;
 }
 
 input {
-    background: transparent;
-    outline: none;
-    border-color: black;
-    border-radius: 3px;
-    width: 380px;
-    height: 30px;
-   padding-left: 8px;
+  background: transparent;
+  outline: none;
+  border-color: black;
+  border-radius: 3px;
+  width: 380px;
+  height: 30px;
+  padding-left: 8px;
 }
 
-label{
-    position: absolute;
-    top: 50%;
-    left: 8px;
-    pointer-events: none;
-    transform: translateY(-50%);
-    transition: 0.3s;
-    color: grey;
-    color: grey;
-    top: 0;
-    left: 8px;
-    padding: 0 2px;
-background: #fff;
+label {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  color: grey;
+  color: grey;
+  top: 0;
+  left: 8px;
+  padding: 0 2px;
+  background: #fff;
 }
 
 input:focus {
-    border: 2px solid #49dddd
+  border: 2px solid #49dddd;
 }
 
+.button-a {
+  border-radius: 5px;
+  display: block;
+  width: 390px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+  cursor: pointer;
+}
 
-  
-  .button-a{
-   border-radius: 5px;
-    display: block;
-    width: 390px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #fff;
-    background-color: black;
-    border: none;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-    cursor: pointer;
-  }
-  
-  .button-a .button-span{
-    
-    position: relative;
-    z-index: 2;
-    cursor: pointer;
-  }
-  
-  .button-a:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #05a43f;
-    transition: all .35s;
-    border-radius: 3px;
-  }
-  
-  .button-a:hover{
-    color: #fff;
-  }
-  
-  .button-a:hover:after{
-    width: 100%;
-  }
+.button-a .button-span {
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.button-a:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #05a43f;
+  transition: all 0.35s;
+  border-radius: 3px;
+}
+
+.button-a:hover {
+  color: #fff;
+}
+
+.button-a:hover:after {
+  width: 100%;
+}

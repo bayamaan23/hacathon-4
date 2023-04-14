@@ -72,8 +72,8 @@ export function StartPage() {
                         />
                       </div>
                     </div>
-                    <div className="box">
-                      <div className="one box">code</div>
+                    <div className="start-box">
+                      <div className="one-box">code</div>
                     </div>
                   </div>
                   <div className="tags">

@@ -21,7 +21,7 @@ import logo from "../video/nicenice.png";
 
 let pages = [
   {
-    title: "Home",
+    title: "Courses",
     link: "/home",
   },
   {
@@ -31,6 +31,10 @@ let pages = [
   {
     title: "Tasks",
     link: "/task1",
+  },
+  {
+    title: "Home",
+    link: "/main",
   },
 ];
 
