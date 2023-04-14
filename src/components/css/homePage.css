@@ -1,0 +1,11 @@
+@media (max-width: 400px) {
+  body {
+    font-size: 12px;
+  }
+  .avatar-1{
+    display: none!important;
+  }
+  .codebar{
+    display: none;
+  }
+}

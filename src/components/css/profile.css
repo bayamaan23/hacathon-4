@@ -34,19 +34,19 @@
   max-width: 500px;
 }
 
-form {
+.profile-form {
   background-color: #fff;
   padding: 20px;
   border-radius: 5px;
 }
 
-label {
+.profile-label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-input {
+.profile-input {
   padding: 5px;
   margin-bottom: 10px;
   width: 100%;
@@ -55,7 +55,7 @@ input {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-button {
+.profile-button {
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -66,7 +66,7 @@ button {
   transition: background-color 0.2s ease;
 }
 
-button:hover {
+.profile-button:hover {
   background-color: #005fa3;
 }
 .css-lafmzo-MuiButtonBase-root-MuiButton-root{

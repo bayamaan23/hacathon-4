@@ -1,4 +1,7 @@
 import React, { useEffect } from "react";
+
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import Carousel from "react-bootstrap/Carousel";
 import Modal from "../components/Modal";
 import { useCommentContext } from "../contexts/CommentsContext";
 import { Avatar } from "@mui/material";
