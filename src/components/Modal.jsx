@@ -36,8 +36,8 @@ export default function BasicModal() {
     const obj = {
       ...formValue,
       [e.target.name]: e.target.value,
-      avatar: user.photoURL,
-      name: user.displayName,
+      // avatar: user.photoURL,
+      // name: user.displayName,
     };
     setFormValue(obj);
   }
