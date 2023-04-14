@@ -1,4 +1,4 @@
-form {
+.payment-form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ form {
   background: white;
 }
 
-input:focus {
+.payment-input:focus {
   border: 2px solid #49dddd;
 }
 

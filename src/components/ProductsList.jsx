@@ -13,6 +13,8 @@ import { useSearchParams } from "react-router-dom";
 import { useProductContext } from "../contexts/ProductContext";
 import { LIMIT } from "../utils/consts";
 import ProductCard from "./ProductCard";
+import "../components/css/homePage.css";
+
 
 function ProductsList() {
   const { products, getProducts, pageTotalCount } = useProductContext();
@@ -87,9 +89,9 @@ function ProductsList() {
           onChange={(e) => setInputVal(e.target.value)}
           style={{ margin: "20px 0", width: "100%" }}
           variant="outlined"
-          label="Search..."
+          label="Search"
         />
-        <FormControl >
+        <FormControl>
           <InputLabel
             style={{
               margin: "20px 0",
@@ -99,7 +101,7 @@ function ProductsList() {
             Category
           </InputLabel>
           <Select
-            style={{ margin: "20px 0", width: "100px",border:'none' }}
+            style={{ margin: "20px 0", width: "100px", border: "none" }}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={category}

@@ -11,15 +11,12 @@ import AuthPage from "../pages/AuthPage";
 import CodeBar from "../components/codebar/CodeBar";
 import Preview from "../components/Preview/Preview";
 import PaymentPage from "../pages/PaymentPage";
-import NewPage from "../pages/NewPage";
 import TasksPage from "../pages/TasksPage";
 import Task1 from "../components/tasks/task1";
 import Task2 from "../components/tasks/Task2";
 import Task3 from "../components/tasks/Task3";
-
 import StartPage from "../components/start/StartPage";
 import ProfilePage from "../pages/ProfilePage";
-
 import SavedPage from "../pages/SavedPage";
 
 function MainRoutes() {

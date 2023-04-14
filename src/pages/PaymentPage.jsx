@@ -31,7 +31,7 @@ function PaymentPage() {
         cvc={cvc}
         focus={focus}
       />
-      <form>
+      <form className="payment-form">
         <input
           type="tel"
           name="number"

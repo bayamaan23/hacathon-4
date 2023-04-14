@@ -41,23 +41,40 @@ function ProfilePage() {
         />
       </div>
       <div className="profile__right">
-        <form onSubmit={handleSubmit}>
-          <label>
+        <form className="profile-form" onSubmit={handleSubmit}>
+          <label className="profile-label">
             Name:
-            <input type="text" value={name} onChange={handleNameChange} />
+            <input
+              className="profile-input"
+              type="text"
+              value={name}
+              onChange={handleNameChange}
+            />
           </label>
           <br />
-          <label>
+          <label className="profile-label">
             Age:
-            <input type="number" value={age} onChange={handleAgeChange} />
+            <input
+              className="profile-input"
+              type="number"
+              value={age}
+              onChange={handleAgeChange}
+            />
           </label>
           <br />
-          <label>
+          <label className="profile-label">
             Email:
-            <input type="email" value={email} onChange={handleEmailChange} />
+            <input
+              className="profile-input"
+              type="email"
+              value={email}
+              onChange={handleEmailChange}
+            />
           </label>
           <br />
-          <button onClick={()=>navigate('/home')} type="submit">Save</button>
+          <button className="profile-button" onClick={() => navigate("/home")} type="submit">
+            Save
+          </button>
         </form>
       </div>
     </div>

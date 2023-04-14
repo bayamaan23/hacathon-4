@@ -71,6 +71,7 @@
  -webkit-user-select: none;
  touch-action: manipulation;
  will-change: transform;
+ width: 100%;
 }
 
 .button-comment:disabled {
@@ -87,4 +88,7 @@
 .button-comment:active {
  box-shadow: none;
  transform: translateY(0);
+}
+#comment{
+  width: 100%;
 }
