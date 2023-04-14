@@ -15,10 +15,9 @@ import TasksPage from "../pages/TasksPage";
 import Task1 from "../components/tasks/task1";
 import Task2 from "../components/tasks/Task2";
 import Task3 from "../components/tasks/Task3";
-
 import StartPage from "../components/start/StartPage";
+import AboutUsPage from "../pages/AboutUsPage";
 import ProfilePage from "../pages/ProfilePage";
-
 import SavedPage from "../pages/SavedPage";
 import Comments from "../components/Comments";
 import Modal from "../components/Modal";
@@ -43,6 +42,7 @@ function MainRoutes() {
         <Route path="/task3" element={<Task3 />} />
         <Route path="/profile" element={<ProfilePage />} />
       </Route>
+      <Route path="/main" element={<AboutUsPage />} />
       <Route path="/" element={<StartPage />} />
       <Route path="/auth" element={<AuthPage />} />
       <Route path="/success" element={<SuccessPage />} />

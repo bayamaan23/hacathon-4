@@ -23,7 +23,7 @@ import { useSavedContext } from "../contexts/SavedContext";
 
 let pages = [
   {
-    title: "Home",
+    title: "Courses",
     link: "/home",
   },
   {
@@ -35,6 +35,10 @@ let pages = [
     link: "/task1",
   },
   {
+    title: "Home",
+    link: "/main",
+    },
+    {
     title: "Comments",
     link: "/comments",
   },
