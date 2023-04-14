@@ -2,33 +2,33 @@ import React, { createContext, useContext, useReducer } from "react";
 import { notify } from "../components/ToastiFy";
 import { ACTIONS } from "../utils/consts";
 
-const cartContext = createContext();
+const savedContext = createContext();
 
-export function useCartContext() {
-  return useContext(cartContext);
+export function useSavedContext() {
+  return useContext(savedContext);
 }
 
 const initState = {
-  cart: {
+  saved: {
     products: [],
     totalPrice: 0,
   },
-  cartLength: 0,
+  savedLength: 0,
 };
 
 function reducer(state, action) {
   switch (action.type) {
-    case ACTIONS.cart:
-      return { ...state, cart: action.payload };
-    case ACTIONS.cartLength:
-      return { ...state, cartLength: action.payload };
+    case ACTIONS.saved:
+      return { ...state, saved: action.payload };
+    case ACTIONS.savedLength:
+      return { ...state, savedLength: action.payload };
     default:
       return state;
   }
 }
 
 function getDataFromLS() {
-  let data = JSON.parse(localStorage.getItem("cart"));
+  let data = JSON.parse(localStorage.getItem("saved"));
   if (!data) {
     data = {
       products: [],
@@ -38,24 +38,24 @@ function getDataFromLS() {
   return data;
 }
 
-function CartContext({ children }) {
+function SavedContext({ children }) {
   const [state, dispatch] = useReducer(reducer, initState);
 
-  function getCart() {
+  function getSaved() {
     const data = getDataFromLS();
     const quantity = data.products.reduce((acc, item) => acc + item.count, 0);
 
     dispatch({
-      type: ACTIONS.cartLength,
+      type: ACTIONS.savedLength,
       payload: quantity,
     });
     dispatch({
-      type: ACTIONS.cart,
+      type: ACTIONS.saved,
       payload: data,
     });
   }
 
-  function addProductToCart(product) {
+  function addProductToSaved(product) {
     const data = getDataFromLS();
     data.products.push({ ...product, count: 1, subPrice: +product.price });
     data.totalPrice = data.products.reduce(
@@ -63,27 +63,27 @@ function CartContext({ children }) {
       0
     );
 
-    localStorage.setItem("cart", JSON.stringify(data));
-    getCart();
-    notify("Successfully added to cart!");
+    localStorage.setItem("saved", JSON.stringify(data));
+    getSaved();
+    notify("Successfully added to saved!");
   }
 
-  function deleteProductCart(id) {
+  function deleteProductSaved(id) {
     const data = getDataFromLS();
     data.products = data.products.filter((item) => item.id !== id);
     data.totalPrice = data.products.reduce(
       (acc, item) => acc + item.subPrice,
       0
     );
-    localStorage.setItem("cart", JSON.stringify(data));
-    getCart();
-    notify("Ooops removed from cart!");
+    localStorage.setItem("saved", JSON.stringify(data));
+    getSaved();
+    notify("Ooops removed from saved!");
   }
 
-  function isAllReadyInCart(id) {
+  function isAllReadyInSaved(id) {
     const data = getDataFromLS();
-    const isInCart = data.products.some((item) => item.id === id);
-    return isInCart;
+    const isInSaved = data.products.some((item) => item.id === id);
+    return isInSaved;
   }
 
   function plusCount(id) {
@@ -99,8 +99,8 @@ function CartContext({ children }) {
       (acc, item) => acc + item.subPrice,
       0
     );
-    localStorage.setItem("cart", JSON.stringify(data));
-    getCart();
+    localStorage.setItem("saved", JSON.stringify(data));
+    getSaved();
   }
 
   function minusCount(id) {
@@ -116,28 +116,30 @@ function CartContext({ children }) {
       (acc, item) => acc + item.subPrice,
       0
     );
-    localStorage.setItem("cart", JSON.stringify(data));
-    getCart();
+    localStorage.setItem("saved", JSON.stringify(data));
+    getSaved();
   }
 
-  function clearCart() {
-    localStorage.removeItem("cart");
-    getCart();
+  function clearSaved() {
+    localStorage.removeItem("saved");
+    getSaved();
   }
 
   const value = {
-    cart: state.cart,
-    cartLength: state.cartLength,
-    getCart,
-    addProductToCart,
-    deleteProductCart,
-    isAllReadyInCart,
+    saved: state.saved,
+    savedLength: state.savedLength,
+    getSaved,
+    addProductToSaved,
+    deleteProductSaved,
+    isAllReadyInSaved,
     plusCount,
     minusCount,
-    clearCart,
+    clearSaved,
   };
 
-  return <cartContext.Provider value={value}>{children}</cartContext.Provider>;
+  return (
+    <savedContext.Provider value={value}>{children}</savedContext.Provider>
+  );
 }
 
-export default CartContext;
+export default SavedContext;

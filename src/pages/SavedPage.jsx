@@ -6,15 +6,18 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { useSavedContext } from "../contexts/SavedContext";
+import { Button, IconButton, Typography } from "@mui/material";
 import { useCartContext } from "../contexts/CartContext";
-import { Button, Typography } from "@mui/material";
-import { Box } from "@mui/system";
-import { Link } from "react-router-dom";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import RemoveShoppingCartOutlinedIcon from "@mui/icons-material/RemoveShoppingCartOutlined";
 
-export default function CartPage() {
-  const { cart, plusCount, minusCount, deleteProductCart } = useCartContext();
-  if (cart.products.length < 1) {
-    return <h1>There is no items in cart yet</h1>;
+export default function SavedPage() {
+  const { saved } = useSavedContext();
+  const { addProductToCart, deleteProductCart, isAllReadyInCart } =
+    useCartContext();
+  if (saved.products.length < 1) {
+    return <h1>There is no saved yet</h1>;
   }
   return (
     <TableContainer sx={{ padding: "10px" }} component={Paper}>
@@ -29,54 +32,34 @@ export default function CartPage() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {cart.products.map((item) => (
+          {saved.products.map((item) => (
             <TableRow
               key={item.id}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {item.title}
+                {item.title}{" "}
+                {isAllReadyInCart(item.id) ? (
+                  <IconButton onClick={() => deleteProductCart(item.id)}>
+                    <RemoveShoppingCartOutlinedIcon color="error" />
+                  </IconButton>
+                ) : (
+                  <IconButton onClick={() => addProductToCart(item)}>
+                    <AddShoppingCartIcon color="success" />
+                  </IconButton>
+                )}
               </TableCell>
+
               <TableCell align="right">
                 <img width={45} src={item.image} alt="" />
               </TableCell>
               <TableCell align="right">{item.category}</TableCell>
               <TableCell align="right">{item.price}</TableCell>
               <TableCell align="right">{item.subPrice}</TableCell>
-              <TableCell>
-                <Button onClick={() => plusCount(item.id)}>+</Button>
-                <Typography component="span" variant="h6">
-                  {item.count}
-                </Typography>
-                <Button
-                  onClick={() => {
-                    if (item.count <= 1) {
-                      deleteProductCart(item.id);
-                    } else {
-                      minusCount(item.id);
-                    }
-                  }}
-                >
-                  -
-                </Button>
-              </TableCell>
             </TableRow>
           ))}
         </TableBody>
       </Table>
-      <Box
-        sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}
-      >
-        <Typography variant="h4">Total Price: ${cart.totalPrice}</Typography>
-        <Button
-          style={{ backgroundColor: "black" }}
-          component={Link}
-          to="/payment"
-          variant="contained"
-        >
-          Buy!🦄
-        </Button>
-      </Box>
     </TableContainer>
   );
 }

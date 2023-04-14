@@ -1,4 +1,5 @@
-form {
+
+.payment-form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -10,7 +11,7 @@ form {
   position: relative;
 }
 
-input {
+.payment-input {
   background: transparent;
   outline: none;
   border-color: black;
@@ -20,7 +21,8 @@ input {
   padding-left: 8px;
 }
 
-label {
+
+.payment-input label {
   position: absolute;
   top: 50%;
   left: 8px;
@@ -28,22 +30,23 @@ label {
   transform: translateY(-50%);
   transition: 0.3s;
   color: grey;
-  color: grey;
+
   top: 0;
   left: 8px;
   padding: 0 2px;
-  background: #fff;
+  background: white;
 }
 
 input:focus {
   border: 2px solid #49dddd;
+
 }
 
 .button-a {
   border-radius: 5px;
   display: block;
   width: 390px;
-  height: 40px;
+  height: 60px;
   line-height: 40px;
   font-size: 18px;
   font-family: sans-serif;

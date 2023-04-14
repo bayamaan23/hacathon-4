@@ -18,6 +18,8 @@ import { Badge } from "@mui/material";
 import { useCartContext } from "../contexts/CartContext";
 import { useAuthContext } from "../contexts/AuthContext";
 import logo from "../video/nicenice.png";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
+import { useSavedContext } from "../contexts/SavedContext";
 
 let pages = [
   {
@@ -35,6 +37,10 @@ let pages = [
   {
     title: "Home",
     link: "/main",
+    },
+    {
+    title: "Comments",
+    link: "/comments",
   },
 ];
 
@@ -44,11 +50,16 @@ const adminPages = [
     link: "/add",
   },
 ];
-const settings = ["Profile", "Account", "Dashboard"];
+const settings = ["Account", "Dashboard"];
 
 function Navbar() {
   const { cartLength, getCart } = useCartContext();
+  const { savedLength, getSaved } = useSavedContext();
   const { user, logout, isAdmin } = useAuthContext();
+
+  React.useEffect(() => {
+    getSaved();
+  }, []);
 
   React.useEffect(() => {
     getCart();
@@ -100,7 +111,7 @@ function Navbar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="black"
             >
               <MenuIcon />
             </IconButton>
@@ -159,7 +170,7 @@ function Navbar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "black",
               textDecoration: "none",
             }}
           >
@@ -193,6 +204,17 @@ function Navbar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <IconButton
+              style={{ color: "black" }}
+              component={Link}
+              to="/saved"
+              size="large"
+              color="inherit"
+            >
+              <Badge badgeContent={savedLength} color="error">
+                <BookmarkIcon />
+              </Badge>
+            </IconButton>
+            <IconButton
               component={Link}
               to="/cart"
               size="large"
@@ -209,7 +231,12 @@ function Navbar() {
                 </IconButton>
               </Tooltip>
             ) : (
-              <Button component={Link} to="/auth" color="inherit">
+              <Button
+                style={{ color: "black" }}
+                component={Link}
+                to="/auth"
+                color="inherit"
+              >
                 Login
               </Button>
             )}
@@ -234,6 +261,15 @@ function Navbar() {
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
+              <MenuItem
+                onClick={() => {
+                  handleCloseUserMenu();
+                }}
+              >
+                <Typography component={Link} to={"/profile"} textAlign="center">
+                  Profile
+                </Typography>
+              </MenuItem>
               <MenuItem
                 onClick={() => {
                   handleCloseUserMenu();

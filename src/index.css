@@ -1,10 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 a {
   color: unset;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+#root{
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -12,5 +20,15 @@ a {
 }
 
 body {
-  background-color: #fff;
+  background: rgb(218, 232, 238);
+  background: linear-gradient(
+    90deg,
+    rgba(218, 232, 238, 1) 8%,
+    rgba(184, 226, 229, 1) 24%,
+    rgba(184, 226, 229, 1) 72%,
+    rgba(218, 232, 238, 1) 93%
+  );
+}
+.css-lafmzo-MuiButtonBase-root-MuiButton-root {
+  color: black !important;
 }

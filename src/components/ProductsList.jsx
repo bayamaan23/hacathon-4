@@ -85,11 +85,11 @@ function ProductsList() {
         <TextField
           value={inputVal}
           onChange={(e) => setInputVal(e.target.value)}
-          style={{ margin: "20px 0", width: "90%" }}
+          style={{ margin: "20px 0", width: "100%" }}
           variant="outlined"
           label="Search..."
         />
-        <FormControl fullWidth>
+        <FormControl >
           <InputLabel
             style={{
               margin: "20px 0",
@@ -99,7 +99,7 @@ function ProductsList() {
             Category
           </InputLabel>
           <Select
-            style={{ margin: "20px 0", width: "100px" }}
+            style={{ margin: "20px 0", width: "100px",border:'none' }}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={category}

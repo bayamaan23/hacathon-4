@@ -24,9 +24,11 @@ function Task1() {
   return (
     <>
       <TasksPage />
-      <div className="task">
-        <h1 style={{ color: "azure", marginBottom: 5 }}>Задание 1</h1>
-        <p style={{ color: "azure" }}>
+      <div className="task" style={{ background: "#b8e2e5" }}>
+        <h1 style={{  color: "black", marginBottom: 5 }}>
+          Задание 1
+        </h1>
+        <p style={{ color: "black" }}>
           Выведите на экран заголовок первого уровня "Welcome to the club,
           buddy", а под ним параграф "First rule of fight club is..."
         </p>

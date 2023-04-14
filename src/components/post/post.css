@@ -1,0 +1,16 @@
+#like-button {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+#like-button:hover {
+  transform: scale(1.2);
+}
+
+#like-button.active {
+  transform: scale(1.5);
+  color: red;
+}
