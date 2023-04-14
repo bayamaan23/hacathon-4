@@ -6,12 +6,12 @@ import StartPage from "../components/start/StartPage";
 
 function MainLayoute() {
   return (
-    <div>
+    <>
       <Navbar />
       <Container maxWidth="lg" sx={{ marginTop: "50px" }}>
         <Outlet />
       </Container>
-    </div>
+    </>
   );
 }
 

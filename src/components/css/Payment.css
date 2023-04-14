@@ -20,6 +20,7 @@
   padding-left: 8px;
 }
 
+
 .payment-input label {
   position: absolute;
   top: 50%;
@@ -28,6 +29,7 @@
   transform: translateY(-50%);
   transition: 0.3s;
   color: grey;
+
   top: 0;
   left: 8px;
   padding: 0 2px;
@@ -36,6 +38,7 @@
 
 .payment-input:focus {
   border: 2px solid #49dddd;
+
 }
 
 .button-a {
