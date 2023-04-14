@@ -23,11 +23,11 @@ function Task3() {
     }
   }
   return (
-    <div>
+    <div style={{ background: "#b8e2e5" }}>
       <TasksPage />
       <div className="task">
-        <h1 style={{ color: "azure", marginBottom: 5 }}>Задание 3</h1>
-        <p style={{ color: "azure" }}>
+        <h1 style={{ color: "black", marginBottom: 5 }}>Задание 3</h1>
+        <p style={{ color: "black" }}>
           Добавьте на страницу три тега strong с содержимым "text". Найдите все
           HTML-теги strong и окрасьте их в зеленый цвет.
         </p>
