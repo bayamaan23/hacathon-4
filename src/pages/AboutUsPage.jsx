@@ -6,6 +6,7 @@ import vidphto from "../video/viddddddoo.jpg";
 import logoic from "../components/start/img/niceice.png";
 import back from "../components/start/img/go-back-2.png";
 import { useNavigate } from "react-router-dom";
+import Comments from "../components/Comments";
 
 function AboutUsPage() {
   const navigate = useNavigate();
@@ -25,10 +26,10 @@ function AboutUsPage() {
 
         <div className="hero-title">
           <div className="about-wrapper-left">
-            <h2 style={{ color: "#9ed9e4", fontSize: "36px" }}>
+            <h2 style={{ color: "#81d1df", fontSize: "36px" }}>
               Learn with us
             </h2>
-            <p style={{ color: "#007acc", opacity: "50%", fontSize: "16px" }}>
+            <p style={{ color: "#007acc", opacity: "90%", fontSize: "16px" }}>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
               nam a omnis non voluptates totam culpa atque architecto tempore
               expedita dicta itaque iure id harum. Facere illo quidem eaque?
@@ -69,6 +70,7 @@ function AboutUsPage() {
       </div>
 
       <div className="review-title">
+        <Comments />
         <div className="container">
           <div className="review-card">
             <img

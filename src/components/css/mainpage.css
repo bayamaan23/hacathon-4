@@ -13,9 +13,8 @@ h1 {
 }
 
 .main-sidebar {
-  background-color: #fff;
+  background: #fff;
   width: 100%;
-  height: 100vh;
 }
 
 .container {
@@ -127,7 +126,6 @@ video {
 .code {
   position: absolute;
   width: 53.2%;
-  z-index: -1;
 }
 
 .try-btn {
