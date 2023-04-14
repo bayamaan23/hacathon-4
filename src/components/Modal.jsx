@@ -6,6 +6,7 @@ import Modal from "@mui/material/Modal";
 import { useCommentContext } from "../contexts/CommentsContext";
 import { useState } from "react";
 import { useAuthContext } from "../contexts/AuthContext";
+import { TextField } from "@mui/material";
 
 const style = {
   position: "absolute",
@@ -36,8 +37,8 @@ export default function BasicModal() {
     const obj = {
       ...formValue,
       [e.target.name]: e.target.value,
-      // avatar: user.photoURL,
-      // name: user.displayName,
+      avatar: user.photoURL,
+      name: user.displayName,
     };
     setFormValue(obj);
   }
@@ -57,7 +58,11 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen} variant="contained">
+      <Button
+        style={{ background: "black" }}
+        onClick={handleOpen}
+        variant="contained"
+      >
         Add comment
       </Button>
       <Modal
@@ -68,14 +73,19 @@ export default function BasicModal() {
       >
         <Box sx={style}>
           <form onSubmit={(e) => handleSubmit(e)}>
-            <input
+            <TextField
               type="text"
               value={formValue.text}
               name="text"
               label="Enter your comment..."
               onChange={(e) => handleChange(e)}
             />
-            <button>Send comment</button>
+            <Button
+              variant="contained"
+              style={{ background: "black", height: "52px" }}
+            >
+              Send comment
+            </Button>
           </form>
         </Box>
       </Modal>

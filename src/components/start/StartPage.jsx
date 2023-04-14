@@ -52,7 +52,7 @@ export function StartPage() {
                   built-in tasks for each course. watch video courses and
                   upgrade with NICECODE
                 </p>
-                <button className="btn-start" onClick={() => navigate("/home")}>
+                <button className="btn-start" onClick={() => navigate("/main")}>
                   Get Started >
                 </button>
               </div>

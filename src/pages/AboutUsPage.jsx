@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../components/css/mainpage.css";
 import bgvid from "../video/Using Personal Computer Laptop in Office _ Free Stock Footage _ No Copyright Video.mp4";
 import code from "../video/code.png";
@@ -7,8 +7,16 @@ import logoic from "../components/start/img/niceice.png";
 import back from "../components/start/img/go-back-2.png";
 import { useNavigate } from "react-router-dom";
 import Comments from "../components/Comments";
+import Modal from "../components/Modal";
+
+import { useCommentContext } from "../contexts/CommentsContext";
 
 function AboutUsPage() {
+  const { comments, getComments } = useCommentContext();
+
+  useEffect(() => {
+    getComments();
+  }, []);
   const navigate = useNavigate();
   return (
     <div className="main-sidebar">
@@ -61,7 +69,7 @@ function AboutUsPage() {
               odit ex nisi voluptas?
             </p>
             <div>
-              <button className="try-btn" onClick={() => navigate("/compiler")}>
+              <button className="try-btn" onClick={() => navigate("/home")}>
                 check it
               </button>
             </div>
@@ -70,23 +78,27 @@ function AboutUsPage() {
       </div>
 
       <div className="review-title">
-        <Comments />
-        <div className="container">
-          <div className="review-card">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4CtaDk3U49ukzwQTk5h6n1mwtWT9HULw-piOF2eF4&s"
-              alt="Reviewer Avatar"
-            />
-            <div className="review-content">
-              <h3 className="reviewer-name">John Doe</h3>
-              <p className="review-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-                risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-                nec, ultricies sed, dolor.
-              </p>
-              <p className="review-date">April 10, 2023</p>
-            </div>
-          </div>
+        <div className="modal-review">
+          <Modal />
+        </div>
+        <div className="review-review">
+          {comments.map((item) => {
+            return (
+              <div className="container">
+                <div className="review-card">
+                  <img
+                    style={{ width: "30%" }}
+                    src={item.avatar}
+                    alt="Reviewer Avatar"
+                  />
+                  <div className="review-content">
+                    <h3 className="reviewer-name">{item.name}</h3>
+                    <p className="review-text">{item.text} </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 

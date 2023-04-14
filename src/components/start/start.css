@@ -320,6 +320,7 @@ h1 {
   }
   .bg {
     background-repeat: round;
+    height: 150%;
   }
 }
 @media (max-width: 640px) {
@@ -348,7 +349,7 @@ h1 {
   .bg {
     background-repeat: unset;
   }
-  .wrapper-right{
+  .wrapper-right {
     margin-top: 10px !important;
   }
 }
@@ -356,20 +357,20 @@ h1 {
   .bg {
     background-repeat: unset;
   }
-  .wrapper-right{
+  .wrapper-right {
     margin-top: 0 !important;
   }
-  .animated-text{
+  .animated-text {
     padding: 0 20px;
   }
-  .disc-start{
+  .disc-start {
     padding: 0 30px;
   }
-  .text{
+  .text {
     margin-left: 0;
     padding: 20px;
   }
-  .btn-start{
+  .btn-start {
     margin: 0 20px;
   }
 }
@@ -377,51 +378,45 @@ h1 {
   .bg {
     background-repeat: unset;
   }
-  .wrapper-right{
+  .wrapper-right {
     margin-top: 0 !important;
   }
-  .animated-text{
+  .animated-text {
     padding: 0;
     font-size: 20px !important;
-
   }
-  .disc-start{
+  .disc-start {
     padding: 0;
     font-size: 10px;
-
   }
-  .text{
+  .text {
     margin-left: 0;
     padding: 15px;
   }
-  .btn-start{
-    margin: 0 ;
+  .btn-start {
+    margin: 0;
   }
-  
 }
 @media (max-width: 330px) {
   .bg {
     background-repeat: unset;
   }
-  .wrapper-right{
+  .wrapper-right {
     margin-top: 0 !important;
   }
-  .animated-text{
+  .animated-text {
     padding: 0;
     font-size: 25px !important;
-
   }
-  .disc-start{
+  .disc-start {
     padding: 0;
     font-size: 10px;
-
   }
-  .text{
+  .text {
     margin-left: 0;
     padding: 15px;
   }
-  .btn-start{
-    margin: 0 ;
+  .btn-start {
+    margin: 0;
   }
-  
 }
