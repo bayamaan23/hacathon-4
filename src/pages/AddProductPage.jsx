@@ -106,7 +106,11 @@ function AddProductPage() {
           variant="outlined"
           onChange={(e) => handleChange(e)}
         />
-        <Button style={{background:'black'}} type="submit" variant="contained">
+        <Button
+          style={{ background: "black" }}
+          type="submit"
+          variant="contained"
+        >
           Add
         </Button>
       </form>

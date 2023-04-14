@@ -15,13 +15,6 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-body {
-  background-image: url("https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg");
-  background-size: 100%;
-
-  background-repeat: no-repeat;
-}
-
 .container {
   max-width: 1200px;
 }

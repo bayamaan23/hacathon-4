@@ -25,7 +25,7 @@ import "../components/css/homePage.css";
 
 let pages = [
   {
-    title: "Home",
+    title: "Courses",
     link: "/home",
   },
   {
@@ -35,6 +35,14 @@ let pages = [
   {
     title: "Tasks",
     link: "/task1",
+  },
+  {
+    title: "Home",
+    link: "/main",
+    },
+    {
+    title: "Comments",
+    link: "/comments",
   },
 ];
 
@@ -260,7 +268,9 @@ function Navbar() {
                   handleCloseUserMenu();
                 }}
               >
-                <Typography component={Link} to={'/profile'} textAlign="center">Profile</Typography>
+                <Typography component={Link} to={"/profile"} textAlign="center">
+                  Profile
+                </Typography>
               </MenuItem>
               <MenuItem
                 onClick={() => {
