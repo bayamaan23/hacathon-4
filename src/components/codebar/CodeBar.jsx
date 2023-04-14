@@ -9,6 +9,7 @@ import {
 } from "../../contexts/CompilerContext";
 import { Box, display } from "@mui/system";
 
+
 function CodeBar() {
   const editorRef = useRef(null);
   const { setCss, setHtml, setJs } = useEditorCompiler();
@@ -27,7 +28,7 @@ function CodeBar() {
   }, [activeTab]);
   return (
     <>
-      <Box className="box" sx={{ display: "flex" }}>
+      <Box className="box-bar" sx={{ display: "flex" }}>
         <div className="codebar">
           <nav className="tab">
             <button
@@ -86,6 +87,11 @@ function CodeBar() {
         </div>
         <Preview />
       </Box>
+        <div>
+          <h1 className="name-bar">
+            the compiler does not work on phone devices{" "}
+          </h1>
+        </div>
     </>
   );
 }

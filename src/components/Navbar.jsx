@@ -20,6 +20,8 @@ import { useAuthContext } from "../contexts/AuthContext";
 import logo from "../video/nicenice.png";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
 import { useSavedContext } from "../contexts/SavedContext";
+import "../components/css/homePage.css";
+
 
 let pages = [
   {
@@ -220,12 +222,12 @@ function Navbar() {
               size="large"
               color="inherit"
             >
-              <Badge badgeContent={cartLength} color="error">
+              <Badge style={{color:'black'}} badgeContent={cartLength}>
                 <ShoppingCartIcon />
               </Badge>
             </IconButton>
             {user ? (
-              <Tooltip title="Open settings">
+              <Tooltip className="avatar-1" title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                   <Avatar alt={user.displayName} src={user.photoURL} />
                 </IconButton>
