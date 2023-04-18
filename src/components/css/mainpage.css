@@ -160,7 +160,7 @@ video {
   position: absolute;
   width: 53%;
   left: 0;
-  top: 200%;
+  top: 230%;
 }
 .about-wrapper-right-2 {
   display: flex;
@@ -280,5 +280,75 @@ video {
 @media all and (max-width: 1250px) {
   .footer {
     padding: 20px;
+  }
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-wrapper-left {
+    text-align: center;
+  }
+  .about-wrapper-right {
+    display: none;
+  }
+  .about-wrapper-left-2 {
+    display: none;
+  }
+  .about-content {
+    top: 20%;
+  }
+  .about-wrapper-right-2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .page-title {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media all and (max-width: 750px) {
+  .about-content {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .review-review {
+    gap: 20px;
+  }
+  .footer ul {
+    display: none;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .about-content {
+    display: none;
+  }
+  .about-wrapper-left {
+    width: 300px;
+  }
+  .about-wrapper-right-2 {
+    width: 300px;
+  }
+  .review-card {
+    width: 200px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .review-card {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+  }
+  .review-title {
+    padding: 10px;
+  }
+  .review-content {
+    width: 150px;
   }
 }

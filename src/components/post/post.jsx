@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./post.css";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 
 function Post() {
-  const [likes, setLikes] = useState(0);
-  const [isLiked, setIsLiked] = useState(false);
+  const [likes, setLikes] = useState(
+    parseInt(localStorage.getItem("likes")) || 0
+  );
+  const [isLiked, setIsLiked] = useState(
+    JSON.parse(localStorage.getItem("isLiked")) || false
+  );
 
   const handleLike = () => {
     if (isLiked) {
@@ -17,13 +21,17 @@ function Post() {
     }
   };
 
+  useEffect(() => {
+    localStorage.setItem("likes", likes);
+    localStorage.setItem("isLiked", JSON.stringify(isLiked));
+  }, [likes, isLiked]);
+
   return (
     <div style={{ display: "flex" }}>
       <button
         id="like-button"
         style={{
           border: "none",
-
           height: "30px",
           backgroundColor: "white",
         }}
@@ -35,7 +43,7 @@ function Post() {
           <FavoriteBorderOutlinedIcon color="error" />
         )}
       </button>
-      <p style={{padding:'0 5px'}}>
+      <p style={{ padding: "0 5px" }}>
         {likes} {likes === 1 ? "лайк" : "лайков"}
       </p>
     </div>

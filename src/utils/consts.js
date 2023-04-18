@@ -1,5 +1,5 @@
 export const API = "http://localhost:8000/products";
-export const API2=  "http://localhost:8001/comments";
+export const API2 = "http://localhost:8001/comments";
 
 export const ACTIONS2 = {
   comments: "comments",
@@ -20,17 +20,17 @@ export const files = {
   "script.js": {
     name: "js",
     language: "javascript",
-    value: "// Write your JavaScript codes here!",
+    value: "",
   },
   "style.css": {
     name: "css",
     language: "css",
-    value: "/* Write your CSS codes here! */",
+    value: "",
   },
   "index.html": {
     name: "html",
     language: "html",
-    value: "<!-- Write your HTML codes here! -->    ",
+    value: "",
   },
 };
 

@@ -1,14 +1,6 @@
 {
   "products": [
     {
-      "title": "Строки в JAVASCRIPT. Тип данных string. Тип JAVASCRIPT.",
-      "description": "В этом уроке поработаем со строками в JavaScript. Разберем типы кавычек, научимся искать часть строки. А также разделять строки и менять регистр.",
-      "price": "140",
-      "category": "java script",
-      "image": "https://i.ytimg.com/vi/jc5Upe8xIN0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDAW6x2kMzDvAIHq4Jg2W2faMN8zA",
-      "id": 1
-    },
-    {
       "title": "Числа в JAVASCRIPT. Тип данных number. Работа с числами.",
       "description": "Created for the hardwood but taken to the streets, the '80s b-ball icon returns with classic, stone-washed canvas in a durable design. Channeling vintage style back onto the streets, its padded, mid-cut collar lets you take your game anywhere—in comfort.",
       "price": "115",
@@ -251,22 +243,6 @@
       "category": "motivation",
       "image": "https://i.ytimg.com/vi/6S5Zw2WuyFE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA8DTFFA6tBpkJNvKYTXc2qfAfiww",
       "id": 23
-    },
-    {
-      "title": "wertyui",
-      "description": "sdfrgthyuji",
-      "price": "345",
-      "category": "motivation",
-      "image": "https://avatars.mds.yandex.net/i?id=aa929ebd4f05425fd7f71eabe0592732-4156995-images-thumbs&n=13",
-      "id": 25
-    },
-    {
-      "title": "sdfghjk",
-      "description": "dfvgbhnm",
-      "price": "dcvbnm",
-      "category": "CSS",
-      "image": "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/66f486ed-c4a5-47a2-a27f-d1768116f162/air-jordan-1-elevate-low-se-womens-shoes-Q630Pk.png",
-      "id": 26
     }
   ]
 }
