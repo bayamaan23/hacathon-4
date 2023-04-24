@@ -1,5 +1,5 @@
-export const API = "http://localhost:8000/products";
-export const API2 = "http://localhost:8001/comments";
+export const API = "https://json-js15.vercel.app/products";
+export const API2 = "https://json-js15.vercel.app/comments";
 
 export const ACTIONS2 = {
   comments: "comments",

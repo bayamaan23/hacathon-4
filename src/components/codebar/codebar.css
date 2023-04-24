@@ -37,7 +37,7 @@
 }
 
 .editor {
-  height: calc(100%, -70px);
+  height: 100%;
   padding: 10px;
 }
 
@@ -59,13 +59,13 @@
   .box-bar {
     display: none !important;
   }
-  .list{
+  .list {
     display: none !important;
   }
-  .task{
+  .task {
     display: none;
   }
-  .box{
+  .box {
     display: none !important;
   }
   .name-bar {
